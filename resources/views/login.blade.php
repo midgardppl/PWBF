@@ -1,59 +1,64 @@
+<!-- <?php 
+
+// include 'config.php';
+
+// session_start();
+
+// error_reporting(0);
+
+// if (isset($_SESSION['username'])) {
+//     header("Location: welcome.php");
+// }
+
+// if (isset($_POST['submit'])) {
+// 	$email = $_POST['email'];
+// 	$password = md5($_POST['password']);
+
+// 	$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+// 	$result = mysqli_query($conn, $sql);
+// 	if ($result->num_rows > 0) {
+// 		$row = mysqli_fetch_assoc($result);
+// 		$_SESSION['username'] = $row['username'];
+// 		header("Location: welcome.php");
+// 	} else {
+// 		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
+// 	}
+// }
+
+?> -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+
+	<title>Login</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-
-
-<div class="container login-container">
-            <div class="row">
-                <div class="col-md-6 login-form-1">
-                    <h3>Login for Form 1</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="NIP/NIM *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="btnSubmit" value="Login" />
-                        </div>
-                        <div class="form-group">
-                            <a href="#" class="ForgetPwd">Forget Password?</a>
-                            <a href="">Sign In</a>
-                        </div>
-                    </form>
-                </div>
-                <!-- <div class="col-md-6 login-form-2">
-                    <h3>Login for Form 2</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Your Password *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="btnSubmit" value="Login" />
-                        </div>
-                        <div class="form-group">
-
-                            <a href="#" class="ForgetPwd" value="Login">Forget Password?</a>
-                        </div>
-                    </form>
-                </div> -->
-            </div>
-        </div>
+<div class="contain">
+	<img src="img/carousel-1.jpg" alt="image">
+	<div class="container">
+		<form action="" method="POST" class="login-email">
+			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
+			<div class="input-group ">
+				<input class=".form-control-lg" type="email" placeholder="Email" name="email" value="" required>
+			</div>
+			<div class="input-group">
+				<input type="password" placeholder="Password" name="password" value="" required>
+			</div>
+			<div class="input">
+				<button name="submit" class="btn">Login</button>
+			</div>
+			<p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
+		</form>
+	</div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php 
 
-include 'config.php';
+// include 'config.php';
 
 error_reporting(0);
 
@@ -51,9 +51,9 @@ if (isset($_POST['submit'])) {
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="register.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
 
-	<title>Register Form - Pure Coding</title>
+	<title>Register</title>
 </head>
 <body>
 	<div class="container">
@@ -74,7 +74,7 @@ if (isset($_POST['submit'])) {
 			<div class="input-group">
 				<button name="submit" class="btn">Register</button>
 			</div>
-			<p class="login-register-text">Have an account? <a href="index.php">Login Here</a>.</p>
+			<p class="login-register-text">Have an account? <a href="login.php">Login Here</a>.</p>
 		</form>
 	</div>
 </body>

@@ -1,52 +1,120 @@
-.login-container{
-    margin-top: 5%;
-    margin-bottom: 5%;
+/***container login***/
+*{
+    margin: 0;
+    padding: 0;
 }
-.login-form-1{
-    padding: 5%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(61, 100%, 50%, 0.596);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.login-form-1 h3{
+
+.contain{
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    background-color: #ffffff ;
+    border-radius: 5px;
+}
+
+.contain img {
+    width: 45%;
+}
+
+.container {
+    width: 500px;
+    height: 520px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+    border:#ffffff;
+}
+
+.container .login-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
     text-align: center;
-    color: #333;
+    margin-bottom: 50px;
+    display: block;
+    text-transform: capitalize;
 }
-.login-form-2{
-    padding: 5%;
-    background: #0062cc;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+
+.container .form-control-lg{
+    background: #e40909;
+    width: 300px;
+    min-height: 200px;
+    
+
 }
-.login-form-2 h3{
+.container .input-group {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.container .input-group input{
+    width: 95%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius:20px;
+    /* border: #FFF; */
+       
+}
+
+.login-register-text{
     text-align: center;
-    color: #fff;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.login-container form{
-    padding: 10%;
+
+.input button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
-.btnSubmit
-{
-    width: 50%;
-    border-radius: 1rem;
-    padding: 1.5%;
-    border: none;
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input .btn{
+    /* width: 100px;
+    height: 50px; */
+    /* position: relative;
+    margin: 0;
+    border-radius: 30%;
+    top: 50%; */
+    /* margin-top: 10%;
+    left: 50%; */
+    /* -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    display: block;
+    width: 100%;
+    padding: 20px 20px;
+    text-align: center;
+    border: #FFF ;
+    background: #fffb00;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
     cursor: pointer;
+    transition: .3s;
+
 }
-.login-form-1 .btnSubmit{
-    font-weight: 600;
-    color: #fff;
-    background-color: #0062cc;
-}
-.login-form-2 .btnSubmit{
-    font-weight: 600;
-    color: #0062cc;
-    background-color: #fff;
-}
-.login-form-2 .ForgetPwd{
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-}
-.login-form-1 .ForgetPwd{
-    color: #0062cc;
-    font-weight: 600;
-    text-decoration: none;
+
+.container .login-email .input .btn:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
 }
