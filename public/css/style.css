@@ -95,7 +95,7 @@
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: var(--dark);
+    color: #FFFFFF;
     font-weight: 500;
     text-transform: uppercase;
     outline: none;
@@ -103,7 +103,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: #FFCB42;
 }
 
 .navbar .dropdown-toggle::after {

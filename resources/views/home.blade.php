@@ -11,8 +11,6 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- rio sayang -->
-
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,15 +39,15 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
+    <!-- Topbar Start
     <div class="container-fluid bg-dark text-light p-0">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5  text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
+        <div class="row gx-0 d-none d-lg-flex border border-light">
+            <div class="col-lg-7 px-5  text-start"> -->
+                <!-- <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
                     <small>Jl. Dr. Ir. H. Soekarno, Mulyorejo, Surabaya</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
+                </div> -->
+                <!-- <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock text-primary me-2"></small>
                     <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
                 </div>
@@ -64,15 +62,16 @@
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div>
         </div>
     </div>
-    <!-- Topbar End -->
+    Topbar End -->
+
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light p-0 fixed-top">
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <h2 class="m-1"><i class="fas fa-book text-primary me-2"></i>eRaport</h2>
         </a>
@@ -82,7 +81,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
+                <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
                 <a href="courses.html" class="nav-item nav-link">Courses</a>
                 <div class="nav-item dropdown">
                     <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -113,8 +112,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
                                     <h1 class="display-2 text-light mb-5 animated slideInDown">...</h1>
-                                    <!-- <a href="https://twitter.com/awqiqah/status/1566717248404090880/photo/1" target="blank" class="btn btn-primary py-sm-3 px-sm-5">Learn More</a>
-                                    <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a> -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -158,10 +156,10 @@
                     <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa fa-car text-white"></i>
+                            <i class="fa fa-school text-white"></i>
                             </div>
                             <div class="ps-4">
-                                <h5>Easy Driving Learn </h5>
+                                <h5>GURU</h5>
                                 <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                             </div>
                         </div>
@@ -174,13 +172,13 @@
                                 <i class="fa fa-users text-white"></i>
                             </div>
                             <div class="ps-4">
-                                <h5>National Instructor</h5>
+                                <h5>SISWA</h5>
                                 <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                <!-- <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
                     <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square bg-primary">
@@ -192,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -426,8 +424,8 @@
     <div class="container-xxl py-6">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase mb-2">Meet The Team</h6>
-                <h1 class="display-6 mb-4">We Have Great Experience Of Driving</h1>
+                <h6 class="text-primary text-uppercase mb-2">Meet The</h6>
+                <h1 class="display-6 mb-4">SISWA BERPRES</h1>
             </div>
             <div class="row g-0 team-items">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
