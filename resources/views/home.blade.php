@@ -26,7 +26,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/styles.css" rel="stylesheet">
-
+ 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -80,9 +80,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
-                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <a href="/home" class="nav-item nav-link active">Home</a>
+                <a href="/about" class="nav-item nav-link">About</a>
+                <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
                 <div class="nav-item dropdown">
                     <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
@@ -95,7 +95,7 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="/login" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a>
+            <!-- <a href="/login" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> Login<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
     </nav>
     <!-- Navbar End -->
@@ -149,24 +149,24 @@
 
 
     <!-- Facts Start -->
-    <div class="container-fluid facts py-5 pt-lg-0">
+    <div class="container-fluid facts py-5 pt-lg-0" >
         <div class="container py-5 pt-lg-0">
             <div class="row gx-0">
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
+                <div class="col-lg-4 wow fadeIn data-wow-delay=0.1s" >
+                    <div> <a href="/login" class="btn-facts btn-primary shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square bg-primary">
                             <i class="fa fa-school text-white"></i>
                             </div>
                             <div class="ps-4">
                                 <h5>GURU</h5>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
+                                <p>Clita erat ipsum lorem sit sed stet duo justo erat amet</p>
                             </div>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
+                <div class="col-lg-4 wow fadeIn data-wow-delay=0.3s" >
+                    <div>  <a href="/login" class="btn-facts btn-primary shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square bg-primary">
                                 <i class="fa fa-users text-white"></i>
@@ -175,7 +175,7 @@
                                 <h5>SISWA</h5>
                                 <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                             </div>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
                 <!-- <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
@@ -197,55 +197,7 @@
     <!-- Facts End -->
 
 
-    <!-- About Start -->
-    <div class="container-xxl py-6">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100" src="img/about-1.jpg" alt="" style="object-fit: cover;">
-                        <img class="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="img/about-2.jpg" alt="" style="width: 200px; height: 200px;">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <h6 class="text-primary text-uppercase mb-2">About Us</h6>
-                        <h1 class="display-6 mb-4">We Help Students To Pass Test & Get A License On The First Try</h1>
-                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <div class="row g-2 mb-4 pb-2">
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Fully Licensed
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Online Tracking
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Afordable Fee 
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Best Trainers
-                            </div>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-sm-6">
-                                <a class="btn btn-primary py-3 px-5" href="">Read More</a>
-                            </div>
-                            <div class="col-sm-6">
-                                <a class="d-inline-flex align-items-center btn btn-outline-primary border-2 p-2" href="tel:+0123456789">
-                                    <span class="flex-shrink-0 btn-square bg-primary">
-                                        <i class="fa fa-phone-alt text-white"></i>
-                                    </span>
-                                    <span class="px-3">+012 345 6789</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
+    
 
 
     <!-- Courses Start -->
@@ -366,7 +318,7 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-primary text-uppercase mb-2">Why Choose Us!</h6>
+                    <h6 class="text-primary hx text-uppercase mb-2">Why Choose Us!</h6>
                     <h1 class="display-6 mb-4">Best Driving Training Agency In Your City</h1>
                     <p class="mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                     <div class="row gy-5 gx-4">
@@ -424,8 +376,8 @@
     <div class="container-xxl py-6">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase mb-2">Meet The</h6>
-                <h1 class="display-6 mb-4">SISWA BERPRES</h1>
+                <h6 class="text-primary hx text-uppercase mb-2">Meet The</h6>
+                <h1 class="display-6 mb-4">SISWA BERPRESTASI</h1>
             </div>
             <div class="row g-0 team-items">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -440,7 +392,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5 class="mt-2">Full Name</h5>
-                            <span>Trainer</span>
+                            <span>Class</span>
                         </div>
                     </div>
                 </div>
@@ -456,7 +408,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5 class="mt-2">Full Name</h5>
-                            <span>Trainer</span>
+                            <span>Class</span>
                         </div>
                     </div>
                 </div>
@@ -472,7 +424,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5 class="mt-2">Full Name</h5>
-                            <span>Trainer</span>
+                            <span>Class</span>
                         </div>
                     </div>
                 </div>
@@ -488,7 +440,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5 class="mt-2">Full Name</h5>
-                            <span>Trainer</span>
+                            <span>Class</span>
                         </div>
                     </div>
                 </div>
@@ -502,7 +454,7 @@
     <div class="container-xxl py-6">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase mb-2">Testimonial</h6>
+                <h6 class="text-primary hx text-uppercase mb-2">Testimonial</h6>
                 <h1 class="display-6 mb-4">Kata ALUMNI</h1>
             </div>
             <div class="row justify-content-center">
@@ -551,14 +503,14 @@
     </div>
     <!-- Testimonial End -->
 
-
+ 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Get In Touch</h4>
-                    <h2 class="text-primary mb-4"><i class="fa fa-car text-white me-2"></i>Drivin</h2>
+                    <h2 class=" mb-4"><i class="fa fa-book text-primary me-2"></i>eRaport</h2>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
@@ -587,13 +539,13 @@
                             <button class="btn btn-primary">Sign Up</button>
                         </div>
                     </form>
-                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
+                    <!-- <h6 class="text-white hx mt-4 mb-3">Follow Us</h6>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square btn-outline-light me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

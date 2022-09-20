@@ -1,120 +1,20 @@
-/***container login***/
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    width: 100%;
-    height: 100%;
-    background-color: hsla(61, 100%, 50%, 0.596);
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contain{
-    display: flex;
-    width: 1000px;
-    height: 600px;
-    background-color: #ffffff ;
-    border-radius: 5px;
-}
-
-.contain img {
-    width: 45%;
-}
-
-.container {
-    width: 500px;
-    height: 520px;
-    background: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,.3);
-    padding: 40px 30px;
-    border:#ffffff;
-}
-
-.container .login-text {
-    color: #111;
-    font-weight: 500;
-    font-size: 1.1rem;
-    text-align: center;
-    margin-bottom: 50px;
-    display: block;
-    text-transform: capitalize;
-}
-
-.container .form-control-lg{
-    background: #e40909;
-    width: 300px;
-    min-height: 200px;
-    
-
-}
-.container .input-group {
-    margin-bottom: 30px;
-    width: 100%;
-}
-
-.container .input-group input{
-    width: 95%;
-    height: 40px;
-    padding-left: 10px;
-    border-radius:20px;
-    /* border: #FFF; */
-       
-}
-
-.login-register-text{
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.input button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    margin-top: 30px;
-    margin-bottom: 100px;
-}
-
-.input{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.input .btn{
-    /* width: 100px;
-    height: 50px; */
-    /* position: relative;
-    margin: 0;
-    border-radius: 30%;
-    top: 50%; */
-    /* margin-top: 10%;
-    left: 50%; */
-    /* -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */
-    display: block;
-    width: 100%;
-    padding: 20px 20px;
-    text-align: center;
-    border: #FFF ;
-    background: #fffb00;
-    outline: none;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    transition: .3s;
-
-}
-
-.container .login-email .input .btn:hover {
-    transform: translateY(-5px);
-    background: #6c5ce7;
-}
+    background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .btn-google {
+    color: white !important;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white !important;
+    background-color: #3b5998;
+  }
