@@ -39,15 +39,15 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start
-    <div class="container-fluid bg-dark text-light p-0">
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-dark text-light p-0">
         <div class="row gx-0 d-none d-lg-flex border border-light">
-            <div class="col-lg-7 px-5  text-start"> -->
-                <!-- <div class="h-100 d-inline-flex align-items-center me-4">
+            <div class="col-lg-7 px-5  text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
                     <small>Jl. Dr. Ir. H. Soekarno, Mulyorejo, Surabaya</small>
-                </div> -->
-                <!-- <div class="h-100 d-inline-flex align-items-center">
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock text-primary me-2"></small>
                     <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
                 </div>
@@ -62,11 +62,11 @@
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
-                </div> -->
-            <!-- </div>
+                </div>
+             </div>
         </div>
-    </div>
-    Topbar End -->
+    </div> -->
+    <!-- Topbar End -->
 
 
 
@@ -93,7 +93,7 @@
                         <a href="404.html" class="dropdown-item">404 Page</a> -->
                     <!-- </div> -->
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
             </div>
             <!-- <a href="/login" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> Login<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
@@ -111,7 +111,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
-                                    <h1 class="display-2 text-light mb-5 animated slideInDown">...</h1>
+                                    <h1 class="display-2 text-light mb-5 animated slideInDown"></h1>
                                     
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
-                                    <h1 class="display-2 text-light mb-5 animated slideInDown">Learning is So Much Easier</h1>
+                                    <h1 class="display-2 text-light mb-5 animated slideInDown"></h1>
                                     <!-- <a href="" class="btn btn-primary py-sm-3 px-sm-5">Learn More</a>
                                     <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a> -->
                                 </div>
@@ -314,7 +314,7 @@
 
 
     <!-- Features Start -->
-    <div class="container-xxl py-6">
+    <!-- <div class="container-xxl py-6">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -363,12 +363,12 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="position-relative overflow-hidden pe-5 pt-5 h-100" style="min-height: 400px;">
                         <img class="position-absolute w-100 h-100" src="img/about-1.jpg" alt="" style="object-fit: cover;">
-                        <img class="position-absolute top-0 end-0 bg-white ps-3 pb-3" src="img/about-2.jpg" alt="" style="width: 200px; height: 200px">
+                        <!-- <img class="position-absolute top-0 end-0 bg-white ps-3 pb-3" src="img/about-2.jpg" alt="" style="width: 200px; height: 200px"> -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Features End -->
 
 
@@ -376,7 +376,7 @@
     <div class="container-xxl py-6">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h6 class="text-primary hx text-uppercase mb-2">Meet The</h6>
+                <h6 class="text-primary hx text-uppercase mb-2">Kenalan Dengan</h6>
                 <h1 class="display-6 mb-4">SISWA BERPRESTASI</h1>
             </div>
             <div class="row g-0 team-items">
@@ -505,7 +505,7 @@
 
  
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+    <!-- <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
@@ -539,17 +539,17 @@
                             <button class="btn btn-primary">Sign Up</button>
                         </div>
                     </form>
-                    <!-- <h6 class="text-white hx mt-4 mb-3">Follow Us</h6>
+                    <h6 class="text-white hx mt-4 mb-3">Follow Us</h6>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square btn-outline-light me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Footer End -->
 
 

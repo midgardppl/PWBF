@@ -1,4 +1,4 @@
-body {
+/* body {
     background: #007bff;
     background: linear-gradient(to right, #0062E6, #33AEFF);
   }
@@ -17,4 +17,20 @@ body {
   .btn-facebook {
     color: white !important;
     background-color: #3b5998;
-  }
+  } */
+
+  .divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}

@@ -14,8 +14,9 @@
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
+        </div>
+        <!-- Spinner End -->
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light p-0 fixed-top">
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
@@ -28,7 +29,7 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="/home" class="nav-item nav-link active">Home</a>
                 <a href="/about" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
                 <div class="nav-item dropdown">
                     <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
@@ -39,22 +40,22 @@
                         <a href="404.html" class="dropdown-item">404 Page</a> -->
                     <!-- </div> -->
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
             </div>
-            <a href="/login" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> Login<i class="fa fa-arrow-right ms-3"></i></a>
+            <!-- <a href="/login" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> Login<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
     </nav>
     <!-- Navbar End -->
     
     <!-- About Start -->
 
-<div class="container-xxl py-6 mt-x">
-<h6 class="text-primary text-uppercase mb-2">About Us</h6>
+<div class="container-xxl py-6 mt-6">
+<h6 class="text-primary text-uppercase mb-4">About Us</h6>
 
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-5 mt-3">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px;">
+                    <div class="position-relative overflow-hidden ps-5 h-100" style="min-height: 400px;">
                         <img class="position-absolute w-100 h-100" src="img/about-1.jpg" alt="" style="object-fit: cover;">
                         <!-- <img class="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="img/about-2.jpg" alt="" style="width: 200px; height: 200px;"> -->
                     </div>
@@ -62,11 +63,12 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
                         
-                        <h1 class="display-6 mb-4">We Help Students To Pass Test & Get A License On The First Try</h1>
+                        <h1 class="display-6 mb-4">MEMBANTU SISWA MELIHAT LAPORAN PEMBELAJARAN</h1>
                         <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet lorem</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deserunt maxime laudantium delectus, ipsa vitae, corporis suscipit quis et cumque numquam fuga beatae dolorem voluptatem debitis tempore. Cupiditate, magni nobis.</p>
                         <div class="row g-2 mb-4 pb-2">
-                            <div class="col-sm-6">
+                            <!-- <div class="col-sm-6">
                                 <i class="fa fa-check text-primary me-2"></i>Fully Licensed
                             </div>
                             <div class="col-sm-6">
@@ -90,7 +92,7 @@
                                     </span>
                                     <span class="px-3">+012 345 6789</span>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

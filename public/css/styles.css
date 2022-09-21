@@ -9,7 +9,7 @@
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+ */ 
 .pallete{
 color: #6E85B7;
 color: #B2C8DF;
@@ -692,6 +692,15 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+
+.row-login {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+}
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -4624,7 +4633,7 @@ border-radius: 20px;
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
-  
+
 }
 
 .card-title {
@@ -7403,6 +7412,10 @@ border-radius: 20px;
 
 .mt-5 {
   margin-top: 3rem !important;
+}
+
+.mt-6{
+  margin-top: 8rem;
 }
 
 .mt-x {
