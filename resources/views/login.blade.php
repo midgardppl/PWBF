@@ -25,7 +25,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light p-0 sticky-top">
-        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+        <a href="/home" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <h2 class="m-1"><i class="fas fa-book text-primary me-2"></i>eRaport</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -46,7 +46,7 @@
                         <a href="404.html" class="dropdown-item">404 Page</a> -->
                     <!-- </div> -->
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
             </div>
             <!-- <a href="/login" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> Login<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>

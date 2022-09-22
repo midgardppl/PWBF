@@ -28,3 +28,8 @@ Route::get('/login', function(){
     return view('login');
 });
 
+Route::post('prosestambah','Crudcontroller@tambahdata');
+
+Route::get('read',function (){
+    return view('read');
+});
