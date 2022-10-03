@@ -28,6 +28,10 @@ Route::get('/login', function(){
     return view('login');
 });
 
+Route::get('/guru', function(){
+    return view('guru');
+});
+
 Route::post('prosestambah','Crudcontroller@tambahdata');
 
 Route::get('read',function (){
