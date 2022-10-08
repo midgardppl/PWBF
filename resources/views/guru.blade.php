@@ -1,63 +1,64 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Sidebar 05</title>
+  	<title>RAON - eRaport</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/sidebar.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="css/sidebar.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-		
-		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
-				<div class="custom-menu">
-					<button type="button" id="sidebarCollapse" class="btn btn-primary">
-	          <i class="fa fa-bars"></i>
-	          <span class="sr-only">Toggle Menu</span>
-	        </button>
+	
+	<!-- <div class="wrapper d-flex align-items-stretch"> -->
+  <div class="container-fluid p-0 vh-100">
+			<!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light p-0 fixed-top">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <h2 class="m-1"><i class="fas fa-book text-primary me-2"></i>eRaport</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="/home" class="nav-item nav-link active">Home</a>
+                <a href="/about" class="nav-item nav-link">About</a>
+                <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mata Pelajaran</a>
+                    <div class="dropdown-menu bg-custom m-0">
+                        <a href="#" class="dropdown-item">Nama MAPEL</a>
+                        <a href="#" class="dropdown-item">Nama MAPEL</a>
+                        <!-- <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a> -->
+                      </div>
+                      </div>
+                    
+                    <!-- </div> -->
+                
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+            
+            <!-- <a href="/login" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> Login<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
-				<div class="p-4">
-		  		<h1><a href="index.html" class="logo">GURU <span>Menu</span></a></h1>
-	        <ul class="list-unstyled components mb-5">
-	          <li class="active">
-	            <a href="#"><span class="fa fa-th-list mr-3"></span> Mata Pelajaran</a>
-	          </li>
-	          <li>
-	              <a href="#"><span class="fa fa-user mr-3"></span> Kelas</a>
-	          </li>
-
-	        </ul>
-
-	        <!-- <div class="mb-5">
-						<h3 class="h6 mb-3">Subscribe for newsletter</h3>
-						<form action="#" class="subscribe-form">
-	            <div class="form-group d-flex">
-	            	<div class="icon"><span class="icon-paper-plane"></span></div>
-	              <input type="text" class="form-control" placeholder="Enter Email Address">
-	            </div>
-	          </form>
-					</div> -->
-
-	        <div class="footer">
-	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-	        </div>
-
-	      </div>
-    	</nav>
-
-        <!-- Page Content  -->
-      <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4">MATA PELAJARAN</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </nav>
+    <!-- Navbar End -->
+    <div class="container py-5">
+			
+    <!-- <section class="vh-100"> -->
+      
+        
+        </div>
       </div>
-		</div>
+    <!-- </section> -->
+    
 
 
     <script src="js/jquery.min.js"></script>

@@ -3840,7 +3840,7 @@ border-radius: 20px;
   padding: 0.25rem 1rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: #ffffff;
   text-align: inherit;
   text-decoration: none;
   background-color: transparent;
@@ -3958,7 +3958,7 @@ border-radius: 20px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-
+ 
 .dropdown-toggle-split {
   padding-right: 0.5625rem;
   padding-left: 0.5625rem;
@@ -7938,6 +7938,11 @@ border-radius: 20px;
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-custom {
+  --bs-bg-opacity: 1;
+  background-color: #277BC0  !important;
 }
 
 .bg-dark {
