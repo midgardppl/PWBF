@@ -83,7 +83,7 @@ color: #F8F9D7;
   }
 }
 
-body {
+body { 
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -254,9 +254,10 @@ sup {
 }
 
 a {
-  color: #212529;
+  color: #FFCB42;
   text-decoration: none;
 }
+
 a:hover {
   color: #198754;
 }
