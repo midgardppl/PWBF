@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAON - About Us</title>
+    <title>RAON - TENTANG</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="/home" class="nav-item nav-link active">Home</a>
-                <a href="/about" class="nav-item nav-link">About</a>
+                <a href="/about" class="nav-item nav-link">Tentang</a>
                 <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
                 <div class="nav-item dropdown">
                     <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -50,7 +50,7 @@
     <!-- About Start -->
 
 <div class="container-xxl py-6 mt-6">
-<h6 class="text-primary text-uppercase mb-4">About Us</h6>
+<h6 class="text-primary text-uppercase mb-4">TENTANG</h6>
 
         <div class="container">
             <div class="row g-5 mt-3">
@@ -63,10 +63,12 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
                         
-                        <h1 class="display-6 mb-4">MEMBANTU SISWA MELIHAT LAPORAN PEMBELAJARAN</h1>
-                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet lorem</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deserunt maxime laudantium delectus, ipsa vitae, corporis suscipit quis et cumque numquam fuga beatae dolorem voluptatem debitis tempore. Cupiditate, magni nobis.</p>
+        
+                        <p class="fs-2 mb-4">Aplikasi Rapot Digital adalah sebuah aplikasi yang bertujuan untuk memudahkan sistem penilaian siswa dan mencetak rapot secara digital.
+                            </p>
+                        <p class=" fs-2">Guru dapat lebih mudah menilai siswa, begitu pun siswa bisa melihat secara langsung nilai yang diraih
+                            </p>
+                    
                         <div class="row g-2 mb-4 pb-2">
                             <!-- <div class="col-sm-6">
                                 <i class="fa fa-check text-primary me-2"></i>Fully Licensed

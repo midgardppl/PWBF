@@ -37,3 +37,7 @@ Route::post('prosestambah','Crudcontroller@tambahdata');
 Route::get('read',function (){
     return view('read');
 });
+
+Route::get('/siswa',function (){
+    return view('siswa');
+});

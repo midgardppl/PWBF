@@ -133,7 +133,7 @@
                 <label for="floatingInput">Email address</label>
               </div>
 
-          <!-- Password input -->
+          <!-- Password input --> 
           <div class="form-floating mb-3">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
