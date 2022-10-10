@@ -92,34 +92,26 @@
             <span class="nav-link">Navigation</span>
           </li> -->
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" href="/kelasA">
               <span class="menu-icon">
-                <i class="mdi mdi-laptop"></i>
+                <i class="mdi mdi-speedometer"></i>
               </span>
               <span class="menu-title">Input Nilai</span>
-              <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/kelasA">Kelas A</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/kelasB">Kelas B</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/kelasC">Kelas C</a></li>
-              </ul>
-            </div>
           </li>
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-account-multiple"></i>
+                <i class="mdi mdi-laptop"></i>
               </span>
               <span class="menu-title">Data Siswa</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/kelasA">Kelas A</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/kelasB">Kelas B</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/kelasC">Kelas C</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
               </ul>
             </div>
           </li>
@@ -360,7 +352,7 @@
                     </div>
                   </a>-->
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item" href="/home">
+                  <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-logout text-danger"></i>
@@ -383,20 +375,164 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            
-           
-              <!-- content-wrapper ends -->
-              <!-- partial:partials/_footer.html -->
-              <!--<footer class="footer">
-                <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                  <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-                  <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
-                </div>
-              </footer>-->
-              <!-- partial -->
-          </div>
-          <!-- main-panel ends -->
+          <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h4 class="card-title">Striped Table</h4>
+                    <p class="card-description"> Add class <code>.table-striped</code>
+                    </p> -->
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th> User </th>
+                            <th> Name </th>
+                            <th> NISN </th>
+                            <th> Input Nilai </th>
+                            <th> Deadline </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="py-1">
+                              <img src="images/fotoe arekarek/foto 1.jpeg" alt="image" />
+                            </td>
+                            <td> Hussein Aprianto </td>
+                            <td>
+                              <span>132501</span>
+                            </td>
+                            <td> <div class="modal fade caption" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
         </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="caption">
+  <a href="" class="btn btn-default btn-rounded mb-4 "  data-toggle="modal" data-target="#modalLoginForm">Tambah Nilai</a>
+</div> </td>
+                            <td> May 15, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td class="py-1">
+                              <img src="images/fotoe arekarek/foto 2.jpg" alt="image" />
+                            </td>
+                            <td> Fharizal Renaldi </td>
+                            <td>
+                              <span>132502</span>
+                            </td>
+                            <td> <a class="btn" href="/home">Tambah Nilai</a> </td>
+                            <td> July 1, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td class="py-1">
+                              <img src="images/fotoe arekarek/foto 3.jpeg" alt="image" />
+                            </td>
+                            <td> Tsalas The King </td>
+                            <td>
+                              <span>132503</span>
+                            </td>
+                            <td> <a class="btn" href="/home">Tambah Nilai</a> </td>
+                            <td> Apr 12, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td class="py-1">
+                              <img src="images/fotoe arekarek/foto 4.jpg" alt="image" />
+                            </td>
+                            <td> Rizka Salisa </td>
+                            <td>
+                                <span>132504</span>
+                            </td>
+                            <td> <a class="btn" href="/home">Tambah Nilai</a> </td>
+                            <td> May 15, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td class="py-1">
+                              <img src="images/fotoe arekarek/foto 5.jpeg" alt="image" />
+                            </td>
+                            <td> Carissa Eka </td>
+                            <td>
+                              <span>132505</span>
+                            </td>
+                            <td> <a class="btn" href="/home">Tambah Nilai</a> </td>
+                            <td> May 03, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td class="py-1">
+                              <img src="images/fotoe arekarek/foto 6.jpeg" alt="image" />
+                            </td>
+                            <td> Erga Viranda </td>
+                            <td>
+                              <span>132506</span>
+                            </td>
+                            <td> <a class="btn" href="/home">Tambah Nilai</a> </td>
+                            <td> April 05, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td class="py-1">
+                              <img src="images/fotoe arekarek/foto 7.jpg" alt="image" />
+                            </td>
+                            <td> Meirza Putri </td>
+                            <td>
+                                <span>132507</span>
+                            </td>
+                            <td> <a class="btn" href="/home">Tambah Nilai</a> </td>
+                            <td> June 16, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td class="py-1">
+                              <img src="images/fotoe arekarek/foto 8.jpeg" alt="image" />
+                            </td>
+                            <td> Favian Hilmi </td>
+                            <td>
+                              <span>132508</span>
+                            </td>
+                            <td> <a class="btn" href="/home">Tambah Nilai</a> </td>
+                            <td> June 16, 2015 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <!--<footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+            </div>
+          </footer>-->
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->

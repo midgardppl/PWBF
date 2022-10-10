@@ -41,3 +41,13 @@ Route::get('read',function (){
 Route::get('/siswa',function (){
     return view('siswa');
 });
+
+Route::get('/kelasA',function (){
+    return view('kelasA');
+});
+Route::get('/kelasB',function (){
+    return view('kelasB');
+});
+Route::get('/kelasC',function (){
+    return view('kelasC');
+});
