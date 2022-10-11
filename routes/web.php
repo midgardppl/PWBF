@@ -20,6 +20,10 @@ Route::get('/home', function () {
 Route::get('/about', function(){
     return view('about');
 });
+
+Route::get('/biodataA', function(){
+    return view('BiodataA');
+});
 // Route::get('/register', function(){
 //     return view('register');
 // });

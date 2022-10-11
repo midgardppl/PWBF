@@ -92,26 +92,34 @@
             <span class="nav-link">Navigation</span>
           </li> -->
           <li class="nav-item menu-items">
-            <a class="nav-link" href="/kelasA">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
               <span class="menu-title">Input Nilai</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/kelasA">Kelas A</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/kelasB">Kelas B</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/kelasC">Kelas C</a></li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
               </span>
               <span class="menu-title">Data Siswa</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="collapse" id="ui-basic2">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                <li class="nav-item"> <a class="nav-link" href="kelasA">Kelas A</a></li>
+                <li class="nav-item"> <a class="nav-link" href="kelasB">Kelas B</a></li>
+                <li class="nav-item"> <a class="nav-link" href="kelasC">kelas C</a></li>
               </ul>
             </div>
           </li>
@@ -352,7 +360,7 @@
                     </div>
                   </a>-->
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
+                  <a href="/home" class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-logout text-danger"></i>
