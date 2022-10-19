@@ -91,25 +91,10 @@
           <!-- <li class="nav-item nav-category">
             <span class="nav-link">Navigation</span>
           </li> -->
-          <!-- <li class="nav-item menu-items">
-            <a class="nav-link" href="#ui-basic">
-              <span class="menu-icon">
-                <i class="mdi mdi-speedometer"></i>
-              </span>
-              <span class="menu-title">Input Nilai</span>
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
-              </ul>
-            </div>
-          </li> -->
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-speedometer"></i>
+                <i class="mdi mdi-laptop"></i>
               </span>
               <span class="menu-title">Input Nilai</span>
               <i class="menu-arrow"></i>
@@ -123,14 +108,14 @@
             </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-laptop"></i>
+                <i class="mdi mdi-account-multiple"></i>
               </span>
               <span class="menu-title">Data Siswa</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic2">
+            <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="/profilA">Kelas A</a></li>
                 <li class="nav-item"> <a class="nav-link" href="/profilB">Kelas B</a></li>
@@ -375,14 +360,14 @@
                     </div>
                   </a>-->
                   <div class="dropdown-divider"></div>
-                  <a  href="/home"  class="dropdown-item preview-item">
+                  <a  href="/home"  class="dropdown-item preview-item" href="/home">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-logout text-danger"></i>
                       </div>
                     </div>
                     <div class="preview-item-content">
-                   <p class="preview-subject mb-1">Log out</p>
+                     <p class="preview-subject mb-1">Log out</p>
                     </div>
                   </a>
                   <!-- <div class="dropdown-divider"></div>
@@ -398,131 +383,20 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-          <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <!-- <h4 class="card-title">Striped Table</h4>
-                    <p class="card-description"> Add class <code>.table-striped</code>
-                    </p> -->
-                    <div class="table-responsive">
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th> Profile </th>
-                            <th> Name </th>
-                            <th> NISN </th>
-                            <th> Input Nilai </th>
-                            <!-- <th> Deadline </th> -->
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 1.jpeg" alt="image" />
-                            </td>
-                            <td> Hussein Aprianto </td>
-                            <td>
-                              <span>132501</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> May 15, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 2.jpg" alt="image" />
-                            </td>
-                            <td> Fharizal Renaldi </td>
-                            <td>
-                              <span>132502</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> July 1, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 3.jpeg" alt="image" />
-                            </td>
-                            <td> Tsalas The King </td>
-                            <td>
-                              <span>132503</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> Apr 12, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 4.jpg" alt="image" />
-                            </td>
-                            <td> Rizka Salisa </td>
-                            <td>
-                                <span>132504</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> May 15, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 5.jpeg" alt="image" />
-                            </td>
-                            <td> Carissa Eka </td>
-                            <td>
-                              <span>132505</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> May 03, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 6.jpeg" alt="image" />
-                            </td>
-                            <td> Erga Viranda </td>
-                            <td>
-                              <span>132506</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> April 05, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 7.jpg" alt="image" />
-                            </td>
-                            <td> Meirza Putri </td>
-                            <td>
-                                <span>132507</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> June 16, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 8.jpeg" alt="image" />
-                            </td>
-                            <td> Favian Hilmi </td>
-                            <td>
-                              <span>132508</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> June 16, 2015 </td> -->
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            
            
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
-          <!--<footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
-            </div>
-          </footer>-->
-          <!-- partial -->
+              <!-- content-wrapper ends -->
+              <!-- partial:partials/_footer.html -->
+              <!--<footer class="footer">
+                <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                  <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+                  <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+                </div>
+              </footer>-->
+              <!-- partial -->
+          </div>
+          <!-- main-panel ends -->
         </div>
-        <!-- main-panel ends -->
-      </div>
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->

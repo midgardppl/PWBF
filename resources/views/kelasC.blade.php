@@ -117,9 +117,9 @@
             </a>
             <div class="collapse" id="ui-basic2">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="kelasA">Kelas A</a></li>
-                <li class="nav-item"> <a class="nav-link" href="kelasB">Kelas B</a></li>
-                <li class="nav-item"> <a class="nav-link" href="kelasC">kelas C</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/profilA">Kelas A</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/profilB">Kelas B</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/profilC">kelas C</a></li>
               </ul>
             </div>
           </li>
@@ -393,11 +393,11 @@
                       <table class="table table-striped">
                         <thead>
                           <tr>
-                            <th> User </th>
+                            <th> Profile </th>
                             <th> Name </th>
-                            <th> Progress </th>
-                            <th> Amount </th>
-                            <th> Deadline </th>
+                            <th> NISN </th>
+                            <th> Input Nilai </th>
+                            <!-- <th> Deadline </th> -->
                           </tr>
                         </thead>
                         <tbody>
@@ -407,12 +407,10 @@
                             </td>
                             <td> Hussein Aprianto </td>
                             <td>
-                              <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
+                              <span>132501</span>
                             </td>
-                            <td> $ 77.99 </td>
-                            <td> May 15, 2015 </td>
+                            <td> </td>
+                            <!-- <td> May 15, 2015 </td> -->
                           </tr>
                           <tr>
                             <td class="py-1">
@@ -420,12 +418,10 @@
                             </td>
                             <td> Fharizal Renaldi </td>
                             <td>
-                              <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
+                              <span>132502</span>
                             </td>
-                            <td> $245.30 </td>
-                            <td> July 1, 2015 </td>
+                            <td> </td>
+                            <!-- <td> July 1, 2015 </td> -->
                           </tr>
                           <tr>
                             <td class="py-1">
@@ -433,12 +429,10 @@
                             </td>
                             <td> Tsalas The King </td>
                             <td>
-                              <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
+                              <span>132503</span>
                             </td>
-                            <td> $138.00 </td>
-                            <td> Apr 12, 2015 </td>
+                            <td> </td>
+                            <!-- <td> Apr 12, 2015 </td> -->
                           </tr>
                           <tr>
                             <td class="py-1">
@@ -446,12 +440,10 @@
                             </td>
                             <td> Rizka Salisa </td>
                             <td>
-                              <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
+                                <span>132504</span>
                             </td>
-                            <td> $ 77.99 </td>
-                            <td> May 15, 2015 </td>
+                            <td> </td>
+                            <!-- <td> May 15, 2015 </td> -->
                           </tr>
                           <tr>
                             <td class="py-1">
@@ -459,12 +451,10 @@
                             </td>
                             <td> Carissa Eka </td>
                             <td>
-                              <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
+                              <span>132505</span>
                             </td>
-                            <td> $ 160.25 </td>
-                            <td> May 03, 2015 </td>
+                            <td> </td>
+                            <!-- <td> May 03, 2015 </td> -->
                           </tr>
                           <tr>
                             <td class="py-1">
@@ -472,12 +462,10 @@
                             </td>
                             <td> Erga Viranda </td>
                             <td>
-                              <div class="progress">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
+                              <span>132506</span>
                             </td>
-                            <td> $ 123.21 </td>
-                            <td> April 05, 2015 </td>
+                            <td> </td>
+                            <!-- <td> April 05, 2015 </td> -->
                           </tr>
                           <tr>
                             <td class="py-1">
@@ -485,12 +473,10 @@
                             </td>
                             <td> Meirza Putri </td>
                             <td>
-                              <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
+                                <span>132507</span>
                             </td>
-                            <td> $ 150.00 </td>
-                            <td> June 16, 2015 </td>
+                            <td> </td>
+                            <!-- <td> June 16, 2015 </td> -->
                           </tr>
                           <tr>
                             <td class="py-1">
@@ -498,12 +484,10 @@
                             </td>
                             <td> Favian Hilmi </td>
                             <td>
-                              <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
+                              <span>132508</span>
                             </td>
-                            <td> $ 150.00 </td>
-                            <td> June 16, 2015 </td>
+                            <td> </td>
+                            <!-- <td> June 16, 2015 </td> -->
                           </tr>
                         </tbody>
                       </table>

@@ -132,9 +132,9 @@
             </a>
             <div class="collapse" id="ui-basic2">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/profilA">Kelas A</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/profilB">Kelas B</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/profilC">Kelas C</a></li>
+                <li class="nav-item"> <a class="nav-link" href="kelasA">Kelas A</a></li>
+                <li class="nav-item"> <a class="nav-link" href="kelasB">Kelas B</a></li>
+                <li class="nav-item"> <a class="nav-link" href="kelasC">Kelas C</a></li>
               </ul>
             </div>
           </li>

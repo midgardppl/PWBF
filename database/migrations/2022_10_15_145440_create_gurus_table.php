@@ -8,22 +8,23 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * 
      * @return void
      */
     public function up()
     {
-        Schema::create('failed_jobs', function (Blueprint $table) {
+        Schema::create('guru', function (Blueprint $table) {
             $table->id();
-            $table->string('uuid')->unique();
-            $table->text('connection');
-            $table->text('queue');
-            $table->longText('payload');
-            $table->longText('exception');
-            $table->timestamp('failed_at')->useCurrent();
+            $table->char('NIP', 12);
+            $table->string('nama');
+            $table->string('alamat');
+            $table->string('j_kel');
+            $table->string('no_telp');
+            $table->string('email');
+            $table->timestamps();
         });
-    }
-
+    } 
+ 
     /**
      * Reverse the migrations.
      *
@@ -31,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('failed_jobs');
+        Schema::dropIfExists('guru');
     }
 };

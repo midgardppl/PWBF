@@ -91,25 +91,10 @@
           <!-- <li class="nav-item nav-category">
             <span class="nav-link">Navigation</span>
           </li> -->
-          <!-- <li class="nav-item menu-items">
-            <a class="nav-link" href="#ui-basic">
-              <span class="menu-icon">
-                <i class="mdi mdi-speedometer"></i>
-              </span>
-              <span class="menu-title">Input Nilai</span>
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
-              </ul>
-            </div>
-          </li> -->
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-speedometer"></i>
+                <i class="mdi mdi-laptop"></i>
               </span>
               <span class="menu-title">Input Nilai</span>
               <i class="menu-arrow"></i>
@@ -125,18 +110,20 @@
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-laptop"></i>
+                <i class="mdi mdi-account-multiple"></i>
               </span>
               <span class="menu-title">Data Siswa</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic2">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/profilA">Kelas A</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/profilB">Kelas B</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/profilC">Kelas C</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/biodataA">kelasA</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/kelasB">kelasB</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/kelasC">KelasC</a></li>
               </ul>
             </div>
+          </li>
+
           </li>
           <!-- <li class="nav-item menu-items">
             <a class="nav-link" href="pages/forms/basic_elements.html">
@@ -375,14 +362,14 @@
                     </div>
                   </a>-->
                   <div class="dropdown-divider"></div>
-                  <a  href="/home"  class="dropdown-item preview-item">
+                  <a  href="/home" class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-logout text-danger"></i>
                       </div>
                     </div>
                     <div class="preview-item-content">
-                   <p class="preview-subject mb-1">Log out</p>
+                      <p class="preview-subject mb-1">Log out</p>
                     </div>
                   </a>
                   <!-- <div class="dropdown-divider"></div>
