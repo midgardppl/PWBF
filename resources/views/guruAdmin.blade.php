@@ -477,7 +477,24 @@
                             <td>
                                 <span>132507</span>
                             </td>
-                            <td> </td>
+                            <td class="container">
+                                <div class="d-flex">
+                                    <div>
+                                        <form action="">
+                                        <label for="tipeNilai"></label>
+                                        <select name="tipeNilai" id="tipeNilai">
+                                            <option value="UH">UH</option>
+                                            <option value="UTS">UTS</option>
+                                            <option value="UAS">UAS</option>
+                                            <option value="TUGAS">TUGAS</option>
+                                        </select>
+                                        </form>
+                                    </div>
+                                    <div>
+                                        <input type="text" name="" id="">
+                                    </div>
+                                </div>
+                            </td>
                             <!-- <td> June 16, 2015 </td> -->
                           </tr>
                           <tr>

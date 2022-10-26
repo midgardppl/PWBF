@@ -8,24 +8,18 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     * 
+     *
      * @return void
      */
     public function up()
-    { 
-        Schema::create('Guru', function (Blueprint $table) {
+    {
+        Schema::create('uts', function (Blueprint $table) {
             $table->id();
-            $table->char('NIP', 12)->unique();
-            $table->string('nama');
-            $table->string('passGuru')->unique();
-            $table->string('alamat');
-            $table->string('j_kel');
-            $table->string('no_telp');
-            $table->string('email')->nullable();
+            $table->char('idUTS',8)->unique();
             $table->timestamps();
         });
-    } 
-  
+    }
+
     /**
      * Reverse the migrations.
      *
@@ -33,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Guru');
+        Schema::dropIfExists('uts');
     }
 };

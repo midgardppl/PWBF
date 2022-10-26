@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuruController;
+use App\Http\Controllers\MapelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,11 +18,13 @@ use App\Http\Controllers\GuruController;
 Route::get('/home', function () {
     return view('home');
 });
+
 // Route::get('/home',[Gurucontroller::class, 'index'])->name('home');
 // Route::get('/admin',[Gurucontroller::class, 'create'])->name('admin');
 // Route::post('/simpan',[Gurucontroller::class, 'store'])->name('simpan');
 
 Route::resource('guru', GuruController::class);
+Route::resource('mapel', MapelController::class);
 // Route::get('/guru.index',[GuruController::class, "index"]);
 // Route::get('/guru.add',[GuruController::class, "create"]);
 

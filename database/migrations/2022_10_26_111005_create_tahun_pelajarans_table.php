@@ -8,24 +8,20 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     * 
+     *
      * @return void
      */
     public function up()
-    { 
-        Schema::create('Guru', function (Blueprint $table) {
+    {
+        Schema::create('tahun_pelajaran', function (Blueprint $table) {
             $table->id();
-            $table->char('NIP', 12)->unique();
-            $table->string('nama');
-            $table->string('passGuru')->unique();
-            $table->string('alamat');
-            $table->string('j_kel');
-            $table->string('no_telp');
-            $table->string('email')->nullable();
+            $table->char('idTahunAjaran',8)->unique();
+            $table->date('tahunMulai');
+            $table->date('tahunAkhir');
             $table->timestamps();
         });
-    } 
-  
+    }
+
     /**
      * Reverse the migrations.
      *
@@ -33,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Guru');
+        Schema::dropIfExists('tahun_pelajaran');
     }
 };
