@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Guru;
 use Illuminate\Http\Request;
- 
-class GuruController extends Controller
+
+class TahunPelajaranController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +13,7 @@ class GuruController extends Controller
      */
     public function index()
     {
-        return view('guru.index', [
-            "guru"=> Guru::all(),
-        ]);
+        //
     }
 
     /**
@@ -26,7 +23,7 @@ class GuruController extends Controller
      */
     public function create()
     {
-        return view('guru.create');
+        //
     }
 
     /**
@@ -37,26 +34,7 @@ class GuruController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'NIP'=>'required|min:12|max:12',
-            'nama'=>'required',
-            'alamat'=>'required',
-            'j_kel'=>'required',
-            'no_telp'=>'required',
-            'email'=>'required'
-        ]);
-
-        // Guru::create($request->all());
-        $guru = new Guru;
-        $guru->NIP=$request->NIP;
-        $guru->nama=$request->nama;
-        $guru->alamat=$request->alamat;
-        $guru->j_kel=$request->j_kel;
-        $guru->no_telp=$request->no_telp;
-        $guru->email=$request->email;
-        $guru->save();
-
-        return redirect()->route('guru.index')->with('success', 'Data berhasil ditambah');
+        //
     }
 
     /**
