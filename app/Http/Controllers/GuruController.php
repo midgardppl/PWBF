@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Guru;
 use Illuminate\Http\Request;
- 
+
 class GuruController extends Controller
 {
     /**
@@ -37,9 +37,11 @@ class GuruController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
-            'NIP'=>'required|min:12|max:12',
+            'NIP'=>'required',
             'nama'=>'required',
+            'passGuru'=>'required',
             'alamat'=>'required',
             'j_kel'=>'required',
             'no_telp'=>'required',
@@ -50,13 +52,14 @@ class GuruController extends Controller
         $guru = new Guru;
         $guru->NIP=$request->NIP;
         $guru->nama=$request->nama;
+        $guru->passGuru=$request->passGuru;
         $guru->alamat=$request->alamat;
         $guru->j_kel=$request->j_kel;
         $guru->no_telp=$request->no_telp;
         $guru->email=$request->email;
         $guru->save();
 
-        return redirect()->route('guru.index')->with('success', 'Data berhasil ditambah');
+    // return redirect()->route('guru.index')->with('success', 'Data berhasil ditambah');
     }
 
     /**

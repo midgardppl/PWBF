@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432101',
             'nama' => 'Budi',
+            'passGuru'=>'oichwsixnw',
             'alamat' => 'southlake',
             'j_kel' => 'Laki-laki',
             'no_telp' => '08213246638',
@@ -28,6 +29,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432102',
             'nama' => 'Nasa',
+            'passGuru'=>'sndklwwiw',
             'alamat' => 'praha',
             'j_kel' => 'perempuan',
             'no_telp' => '08213246124',
@@ -36,6 +38,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432103',
             'nama' => 'Welma',
+            'passGuru'=>'kqwjdoqjwdoqi',
             'alamat' => 'Moscow',
             'j_kel' => 'Perempuan',
             'no_telp' => '082167273',
@@ -44,6 +47,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432104',
             'nama' => 'Hamzah',
+            'passGuru'=>'kjhgfdyuwi',
             'alamat' => 'Bekasi',
             'j_kel' => 'Laki-laki',
             'no_telp' => '08213231638',
@@ -52,6 +56,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432105',
             'nama' => 'Kale',
+            'passGuru'=>'njasqid',
             'alamat' => 'Glasgow',
             'j_kel' => 'Laki-laki',
             'no_telp' => '082121416638',
@@ -60,6 +65,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432106',
             'nama' => 'Bautista',
+            'passGuru'=>'khjgywaqi',
             'alamat' => 'San Francisco',
             'j_kel' => 'Laki-laki',
             'no_telp' => '08213246630',
@@ -68,6 +74,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432107',
             'nama' => 'Indira',
+            'passGuru'=>'oiuytrew',
             'alamat' => 'Surabaya',
             'j_kel' => 'Perempuan',
             'no_telp' => '0895606089424',
@@ -76,6 +83,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432108',
             'nama' => 'Santoso',
+            'passGuru'=>'273t6937',
             'alamat' => 'Guangzhou',
             'j_kel' => 'Laki-laki',
             'no_telp' => '08276543275',
@@ -84,6 +92,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432109',
             'nama' => 'Selvi',
+            'passGuru'=>'kajdsoqwj',
             'alamat' => 'London',
             'j_kel' => 'Perempuan',
             'no_telp' => '087654345678',
@@ -92,6 +101,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432110',
             'nama' => 'Aisyah',
+            'passGuru'=>'q2ye98y3',
             'alamat' => 'Madinah',
             'j_kel' => 'Perempuan',
             'no_telp' => '086545678921',
@@ -100,6 +110,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432111',
             'nama' => 'Vian',
+            'passGuru'=>'zkjaodwij',
             'alamat' => 'Beijing',
             'j_kel' => 'Laki-laki',
             'no_telp' => '0821322538',
@@ -108,6 +119,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432112',
             'nama' => 'Bastian',
+            'passGuru'=>'dnwlkwne',
             'alamat' => 'Amsterdam',
             'j_kel' => 'Laki-laki',
             'no_telp' => '08213209638',
@@ -116,6 +128,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432113',
             'nama' => 'Lupita',
+            'passGuru'=>'qpwskoqs',
             'alamat' => 'Helsinki',
             'j_kel' => 'Perempuan',
             'no_telp' => '08218766638',
@@ -124,12 +137,13 @@ class DatabaseSeeder extends Seeder
         \App\Models\Guru::factory()->create([
             'NIP' => '098765432114',
             'nama' => 'Karim',
+            'passGuru'=>'kswjxnqoww',
             'alamat' => 'Jerusalem',
             'j_kel' => 'Laki-laki',
             'no_telp' => '08213986638',
             'email' => 'karim@gmail.com'
         ]);
- 
+
 
         //TABEL MAPEL
 
@@ -209,7 +223,7 @@ class DatabaseSeeder extends Seeder
 
 
 
-        
+
         // \App\Models\Guru::factory()->create([
         //     'NIP' => '098765432115',
         //     'nama' => 'Jafar',

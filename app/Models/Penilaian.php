@@ -5,8 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class UTS extends Model
+class Penilaian extends Model
 {
     use HasFactory;
-    protected $table='UTS';
+    protected $table='penilaian';
+    protected $hidden=['id'];
 }

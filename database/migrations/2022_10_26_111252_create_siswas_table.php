@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->char('NISN',10)->unique();
             $table->string('namaSiswa');
+            $table->string('passSiswa')->unique();
             $table->date('tglLahir');
             $table->boolean('j_kelSiswa');
             $table->string('alamatSiswa');

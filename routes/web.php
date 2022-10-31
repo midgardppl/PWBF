@@ -14,7 +14,7 @@ use App\Http\Controllers\MapelController;
 | contains the "web" middleware group. Now create something great!
 |
 */
- 
+
 Route::get('/home', function () {
     return view('home');
 });
@@ -38,7 +38,7 @@ Route::get('/about', function(){
 
 Route::get('/profilA', function(){
     return view('profilA');
-}); 
+});
 Route::get('/profilB', function(){
     return view('profilB');
 });
