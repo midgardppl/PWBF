@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-// use App\Http\Models\Mapel;
 
 class DatabaseSeeder extends Seeder
 {
@@ -218,7 +217,107 @@ class DatabaseSeeder extends Seeder
             "Guru_ID" => "098765432114"
         ]);
 
-
+        //SISWA//
+        \App\Models\Siswa::factory()->create([
+            "NISN"=>"0056780101",
+            "namaSiswa"=>"Ahmad",
+            "passSiswa"=>"jweuhduwi",
+            "tglLahir"=>"2003-09-10",
+            "j_kelSiswa"=>"0",
+            "alamatSiswa"=>"Jombang",
+            "no_telpSiswa"=>"0987654312",
+            "statusSiswa"=>"1"
+        ]);
+        \App\Models\Siswa::factory()->create([
+            "NISN"=>"0056780102",
+            "namaSiswa"=>"Sinta",
+            "passSiswa"=>"oqiwhqd",
+            "tglLahir"=>"2003-12-03",
+            "j_kelSiswa"=>"1",
+            "alamatSiswa"=>"Madiun",
+            "no_telpSiswa"=>"0983255312",
+            "statusSiswa"=>"1"
+        ]);
+        \App\Models\Siswa::factory()->create([
+            "NISN"=>"0056780103",
+            "namaSiswa"=>"Kardi",
+            "passSiswa"=>"oqweuwoqieu",
+            "tglLahir"=>"2003-02-04",
+            "j_kelSiswa"=>"0",
+            "alamatSiswa"=>"Surakarta",
+            "no_telpSiswa"=>"09876598632",
+            "statusSiswa"=>"1"
+        ]);
+        \App\Models\Siswa::factory()->create([
+            "NISN"=>"0056780104",
+            "namaSiswa"=>"Nardi",
+            "passSiswa"=>"owqihdwi",
+            "tglLahir"=>"2003-11-08",
+            "j_kelSiswa"=>"0",
+            "alamatSiswa"=>"Banten",
+            "no_telpSiswa"=>"0823687123",
+            "statusSiswa"=>"1"
+        ]);
+        \App\Models\Siswa::factory()->create([
+            "NISN"=>"0056780105",
+            "namaSiswa"=>"Kinan",
+            "passSiswa"=>"mzxnckjs",
+            "tglLahir"=>"2003-05-28",
+            "j_kelSiswa"=>"1",
+            "alamatSiswa"=>"Cikarang",
+            "no_telpSiswa"=>"08902830112",
+            "statusSiswa"=>"1"
+        ]);
+        \App\Models\Siswa::factory()->create([
+            "NISN"=>"0056780106",
+            "namaSiswa"=>"Dinda",
+            "passSiswa"=>"oqwpooiasx",
+            "tglLahir"=>"2003-11-22",
+            "j_kelSiswa"=>"1",
+            "alamatSiswa"=>"Bandung",
+            "no_telpSiswa"=>"089293123",
+            "statusSiswa"=>"1"
+        ]);
+        \App\Models\Siswa::factory()->create([
+            "NISN"=>"0056780107",
+            "namaSiswa"=>"Basuki",
+            "passSiswa"=>"asdkjwio",
+            "tglLahir"=>"2003-07-05",
+            "j_kelSiswa"=>"0",
+            "alamatSiswa"=>"Sleman",
+            "no_telpSiswa"=>"09872183712",
+            "statusSiswa"=>"1"
+        ]);
+        \App\Models\Siswa::factory()->create([
+            "NISN"=>"0056780108",
+            "namaSiswa"=>"Winda",
+            "passSiswa"=>"jwashuwi",
+            "tglLahir"=>"2003-09-30",
+            "j_kelSiswa"=>"1",
+            "alamatSiswa"=>"Manado",
+            "no_telpSiswa"=>"09876289312",
+            "statusSiswa"=>"1"
+        ]);
+        \App\Models\Siswa::factory()->create([
+            "NISN"=>"0056780109",
+            "namaSiswa"=>"Wildan",
+            "passSiswa"=>"jaskbdiuwi",
+            "tglLahir"=>"2003-04-23",
+            "j_kelSiswa"=>"0",
+            "alamatSiswa"=>"Bali",
+            "no_telpSiswa"=>"0982394312",
+            "statusSiswa"=>"1"
+        ]);
+        \App\Models\Siswa::factory()->create([
+            "NISN"=>"0056780110",
+            "namaSiswa"=>"Harbi",
+            "passSiswa"=>"asjhduwei",
+            "tglLahir"=>"2002-11-08-",
+            "j_kelSiswa"=>"1",
+            "alamatSiswa"=>"Surabaya",
+            "no_telpSiswa"=>"098281122",
+            "statusSiswa"=>"1"
+        ]);
 
 
 
