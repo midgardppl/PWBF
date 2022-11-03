@@ -44,8 +44,7 @@ class GuruController extends Controller
             'passGuru'=>'required',
             'alamat'=>'required',
             'j_kel'=>'required',
-            'no_telp'=>'required',
-            'email'=>'required'
+            'no_telp'=>'required'
         ]);
 
         // Guru::create($request->all());
@@ -59,7 +58,9 @@ class GuruController extends Controller
         $guru->email=$request->email;
         $guru->save();
 
-    // return redirect()->route('guru.index')->with('success', 'Data berhasil ditambah');
+        // echo "data berhasil masuk";
+
+        return redirect()->route('guru.index')->with('success', 'Data berhasil ditambah');
     }
 
     /**

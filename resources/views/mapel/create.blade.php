@@ -10,18 +10,18 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center mb-5">Data Guru</h1>
-        <a href="{{ route('mapel.create') }}" class="btn btn-primary mb-3">Tambah Data</a>
+        <a href="{{ route('mapel.index') }}" class="btn btn-primary mb-3">Data Mata Pelajaran</a>
         <div class="card-body">
             <form action="{{ route('mapel.store') }}" method="POST">
                 @csrf
                 <div class="mb-3">
                     <label for="NIP" class="form-label">ID MATA PELAJARAN</label>
-                    <input type="text" class="form-control" id=NIP>
+                    <input type="text" class="form-control" name=idMapel>
                     
                 </div>
                 <div class="mb-3">
                     <label for="nama" class="form-label">NAMA MATA PELAJARAN</label>
-                    <input type="text" class="form-control" id=nama>
+                    <input type="text" class="form-control" name=namaMapel>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
                 <!-- <div class="mb-3">
@@ -42,7 +42,7 @@
                 <div class="mb-3">
                     <label for="nama" class="form-label">E-mail</label>
                     <input type="text" class="form-control" id=email>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    
                 </div> -->
                 
 

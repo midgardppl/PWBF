@@ -30,7 +30,7 @@ class MapelController extends Controller
     {
         return view('mapel.create');
     }
-
+ 
     /**
      * Store a newly created resource in storage.
      *
@@ -40,16 +40,17 @@ class MapelController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'idMapel'=>'required|min:8|max:8',
+            'idMapel'=>'required',
             'namaMapel'=>'required',
+            'Guru_ID'=>'required'
         ]);
 
         $mapel = new Mapel;
-        $guru->idMapel=$request->idMapel;
-        $guru->namaMapel=$request->namaMapel;
-        $guru->save();
+        $mapel->idMapel=$request->idMapel;
+        $mapel->namaMapel=$request->namaMapel;
+        $mapel->save();
 
-        return to_route('mapel.index')->with('success', 'Data berhasil ditambah');
+        return redirect('mapel.index')->with('success', 'Data berhasil ditambah');
     }
 
     /**

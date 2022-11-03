@@ -10,7 +10,7 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center mb-5">Mata Pelajaran</h1>
-        <a href="#" class="btn btn-primary mb-3">Tambah Data</a>
+        <a href="{{ route('mapel.create') }}" class="btn btn-primary mb-3">Tambah Data</a>
         <div class="card-body">
             <div class="table">
                 <table>
@@ -18,18 +18,17 @@
                     <td>No</td>
                     <td>ID</td>
                     <td>Nama</td>
-                    <td>Nama Guru</td>
-                    <td>Nomor Telepon</td>
+                    <!-- <td>Nama Guru</td>
+                    <td>Nomor Telepon</td> -->
                 </thead>
                 <tbody>
                     @foreach ($mapel as $m)
                     
                         <tr>
                             <td>{{ $loop->iteration }}</td>
-                            <td>{{$m ->idMapel}}</td>
-                            <td>{{$m ->namaMapel}}</td>
-                            <td>{{$m ->guru->nama}}</td>
-                            <td>{{$m ->guru->no_telp}}</td>
+                            <td>{{$m -> idMapel}}</td>
+                            <td>{{$m -> namaMapel}}</td>
+                            <!-- <td>{{$m -> guru->nama}}</td> -->
                             <td>
                                 <a href="" class="btn btn-success btn-sm">Edit</a>
                                 <a href="" class="btn btn-success btn-sm">Hapus</a>
