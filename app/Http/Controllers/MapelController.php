@@ -14,10 +14,10 @@ class MapelController extends Controller
      */
     public function index()
     {
-        $mapel=Mapel::with('guru')->get();
+        $mapel=Mapel::with(['guru','siswa'])->get();
         return view('mapel.index',
         ['mapel'=>$mapel
-        
+
         ]);
     }
 
@@ -30,7 +30,7 @@ class MapelController extends Controller
     {
         return view('mapel.create');
     }
- 
+
     /**
      * Store a newly created resource in storage.
      *

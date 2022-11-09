@@ -22,7 +22,7 @@
     <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="css/guru.css">
-    
+
     <!-- End layout styles -->
     <link rel="shortcut icon" href="images/arsenal.png" />
   </head>
@@ -114,7 +114,7 @@
               </span>
               <span class="menu-title">Data Siswa</span>
               <i class="menu-arrow"></i>
-            </a> 
+            </a>
             <div class="collapse" id="ui-basic2">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="/profilA">kelasA</a></li>
@@ -210,7 +210,7 @@
                 <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
                   <h6 class="p-3 mb-0">Projects</h6>
-                  <div class="dropdown-divider"></div> 
+                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
@@ -245,7 +245,7 @@
                   </a>
                   <div class="dropdown-divider"></div>
                   <p class="p-3 mb-0 text-center">See all projects</p>
-                </div> 
+                </div>
               </li>
               <li class="nav-item nav-settings d-none d-lg-block">
                 <a class="nav-link" href="#">
@@ -356,7 +356,7 @@
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-settings text-success"></i>
                       </div>
-                    </div> 
+                    </div>
                     <div class="preview-item-content">
                       <p class="preview-subject mb-1">Settings</p>
                     </div>
@@ -383,130 +383,10 @@
           </div>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
-          <div class="content-wrapper">
-          <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <!-- <h4 class="card-title">Striped Table</h4>
-                    <p class="card-description"> Add class <code>.table-striped</code>
-                    </p> -->
-                    <div class="table-responsive">
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th> Profile </th>
-                            <th> Name </th>
-                            <th> NISN </th>
-                            <th> Input Nilai </th>
-                            <!-- <th> Deadline </th> -->
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 1.jpeg" alt="image" />
-                            </td>
-                            <td> Hussein Aprianto </td>
-                            <td>
-                              <span>132501</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> May 15, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 2.jpg" alt="image" />
-                            </td>
-                            <td> Fharizal Renaldi </td>
-                            <td>
-                              <span>132502</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> July 1, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 3.jpeg" alt="image" />
-                            </td>
-                            <td> Tsalas The King </td>
-                            <td>
-                              <span>132503</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> Apr 12, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 4.jpg" alt="image" />
-                            </td>
-                            <td> Rizka Salisa </td>
-                            <td>
-                                <span>132504</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> May 15, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 5.jpeg" alt="image" />
-                            </td>
-                            <td> Carissa Eka </td>
-                            <td>
-                              <span>132505</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> May 03, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 6.jpeg" alt="image" />
-                            </td>
-                            <td> Erga Viranda </td>
-                            <td>
-                              <span>132506</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> April 05, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 7.jpg" alt="image" />
-                            </td>
-                            <td> Meirza Putri </td>
-                            <td>
-                                <span>132507</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> June 16, 2015 </td> -->
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="images/fotoe arekarek/foto 8.jpeg" alt="image" />
-                            </td>
-                            <td> Favian Hilmi </td>
-                            <td>
-                              <span>132508</span>
-                            </td>
-                            <td> </td>
-                            <!-- <td> June 16, 2015 </td> -->
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-           
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
-          <!--<footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
-            </div>
-          </footer>-->
-          <!-- partial -->
+        <div>
+            <p>hai</p>
+        </div>
+
         </div>
         <!-- main-panel ends -->
       </div>

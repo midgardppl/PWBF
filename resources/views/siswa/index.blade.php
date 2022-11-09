@@ -38,8 +38,9 @@
                             <td>{{$s -> statusSiswa}}</td>
                             <td>
 
-                                @foreach ($s as $item)
-                                    {{$s -> namaMapel}}
+                                @foreach ($s->mapel as $item)
+                                    {{$item -> namaMapel}}
+                                    <br>
 
                                 @endforeach
                             </td>

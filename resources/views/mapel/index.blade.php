@@ -23,25 +23,31 @@
                 </thead>
                 <tbody>
                     @foreach ($mapel as $m)
-                    
+
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{$m -> idMapel}}</td>
                             <td>{{$m -> namaMapel}}</td>
-                            <!-- <td>{{$m -> guru->nama}}</td> -->
+                            <td>{{$m -> guru->nama}}</td>
+                            <td>
+                                @foreach ($m->siswa as $item)
+                            {{$item->namaSiswa}}
+                            <br>
+                            @endforeach
+                            </td>
                             <td>
                                 <a href="" class="btn btn-success btn-sm">Edit</a>
                                 <a href="" class="btn btn-success btn-sm">Hapus</a>
                             </td>
                         </tr>
-                    
+
                     @endforeach
                 </tbody>
                 </table>
             </div>
-          
+
         </div>
     </div>
-   
+
 </body>
 </html>

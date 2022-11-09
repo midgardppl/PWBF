@@ -19,5 +19,14 @@ class Mapel extends Model
         return $this->hasOne(Guru::class, 'id');
     }
 
+    /**
+     * The roles that belong to the Mapel
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function siswa()
+    {
+        return $this->belongsToMany(Siswa::class, 'mapel_siswa', 'mapel_id', 'siswa_id');
+    }
 
 }

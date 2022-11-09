@@ -19,7 +19,7 @@ class Siswa extends Model
          *
          * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
          */
-        public function mapel(): BelongsToMany
+        public function mapel()
         {
             return $this->belongsToMany(Mapel::class, 'mapel_siswa', 'siswa_id', 'mapel_id');
         }
