@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('Mapel', function (Blueprint $table) {
-            $table->id();
-            $table->char("idMapel",8)->unique();
-            $table->string("namaMapel");
-            $table->timestamps(); 
+        Schema::create('guru_mapel', function (Blueprint $table) {
+            $table->unsignedBigInteger('guru_id');
+            $table->foreign('guru_id')->references('id')->on('guru')->onDelete('restrict');
+            $table->unsignedBigInteger('mapel_id');
+            $table->foreign('mapel_id')->references('id')->on('mapel')->onDelete('restrict');
         });
     }
 
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Mapel');
+        Schema::dropIfExists('guru_mapel');
     }
 };

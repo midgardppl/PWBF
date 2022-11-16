@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Semester;
+use App\Models\WaliKelas;
 
-class SemesterController extends Controller
+class WaliKelasController extends Controller
 {
     /**
      * Display a listing of the resource.

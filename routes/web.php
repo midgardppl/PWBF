@@ -4,6 +4,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\MapelController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\KelasController;
+use App\Http\Controllers\PenilaianController;
+use App\Http\Controllers\RaportController;
+use App\Http\Controllers\SemesterController;
+use App\Http\Controllers\TahunPelajaranController;
+use App\Http\Controllers\WaliKelasController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +34,12 @@ Route::get('/home', function () {
 Route::resource('guru', GuruController::class);
 Route::resource('mapel', MapelController::class);
 Route::resource('siswa', SiswaController::class);
+Route::resource('kelas', KelasController::class);
+Route::resource('penilaian', PenilaianController::class);
+Route::resource('raport', RaportController::class);
+Route::resource('semester', SemesterController::class);
+Route::resource('tahunpelajaran', TahunPelajaranController::class);
+Route::resource('walikelas', WaliKelasController::class);
 // Route::get('/guru.index',[GuruController::class, "index"]);
 // Route::get('/guru.add',[GuruController::class, "create"]);
 

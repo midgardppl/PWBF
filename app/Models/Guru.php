@@ -12,7 +12,13 @@ class Guru extends Model
     protected $hidden = ['id'];
     protected $fillable =['NIP','nama','alamat','j_kel','no_telp','email'];
 
-    public function mapel(){
-        return $this->belongsTo(Mapel::class,'id');
+    /**
+     * The roles that belong to the Guru
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function mapel()
+    {
+        return $this->belongsToMany(Mapel::class, 'guru_mapel', 'guru_id', 'mapel_id');
     }
 }

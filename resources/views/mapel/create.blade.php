@@ -22,6 +22,15 @@
                 <div class="mb-3">
                     <label for="nama" class="form-label">NAMA MATA PELAJARAN</label>
                     <input type="text" class="form-control" name=namaMapel>
+                </div>
+                <div class="form-group">
+                    <label>Nama Guru</label>
+                    <select name="guru_id[]" id="inputState">
+                        <option selected>Pilih Guru</option>
+                        @foreach ($guru as $g)
+                        <option value="{{ $g -> id }}">{{ $g -> nama }}</option>
+                        @endforeach
+                    </select>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
                 <!-- <div class="mb-3">

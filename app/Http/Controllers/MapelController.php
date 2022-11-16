@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Mapel;
+use App\Models\Guru;
+use App\Models\Guru_Mapel;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MapelController extends Controller
 {
@@ -28,7 +32,11 @@ class MapelController extends Controller
      */
     public function create()
     {
-        return view('mapel.create');
+        $mapel=Mapel::with(['guru','siswa'])->get();
+        $guru=DB::table('guru')->get();
+        return view('mapel.create', compact('guru'));
+
+         
     }
 
     /**
@@ -41,16 +49,24 @@ class MapelController extends Controller
     {
         $request->validate([
             'idMapel'=>'required',
-            'namaMapel'=>'required',
-            'Guru_ID'=>'required'
+            'namaMapel'=>'required'
         ]);
 
         $mapel = new Mapel;
+        $mapel->id=$request->id;
         $mapel->idMapel=$request->idMapel;
         $mapel->namaMapel=$request->namaMapel;
         $mapel->save();
+        $guru=Guru::find('id');
+        $guru->id=$request->id;
+        $guru_mapel = new Guru_Mapel;
+        $guru_mapel->create([
+            'guru_id'=>$guru->id,
+            'mapel_id'=>$mapel->id
+        ]);
+        
 
-        return redirect('mapel.index')->with('success', 'Data berhasil ditambah');
+        return redirect('mapel')->with('success', 'Data berhasil ditambah');
     }
 
     /**

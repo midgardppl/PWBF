@@ -28,7 +28,12 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{$m -> idMapel}}</td>
                             <td>{{$m -> namaMapel}}</td>
-                            <td>{{$m -> guru->nama}}</td>
+                            <td>
+                                @foreach ($m->guru as $guru)
+                            {{$guru->nama}}
+                            <br>
+                            @endforeach
+                            </td>
                             <td>
                                 @foreach ($m->siswa as $item)
                             {{$item->namaSiswa}}

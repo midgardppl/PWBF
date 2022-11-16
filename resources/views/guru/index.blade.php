@@ -33,7 +33,12 @@
                             <td>{{$g -> j_kel}}</td>
                             <td>{{$g -> no_telp}}</td>
                             <td>{{$g -> email}}</td>
-                            <td>{{$g -> mapel->namaMapel}}</td>
+                            <td>
+                                @foreach ($g->mapel as $item)
+                                {{$item->namaMapel}}
+                            <br>
+                            @endforeach
+                            </td>
                             <td>
                                 <a href="" class="btn btn-success btn-sm">Edit</a>
                                 <a href="" class="btn btn-success btn-sm">Hapus</a>

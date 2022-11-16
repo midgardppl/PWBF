@@ -149,72 +149,72 @@ class DatabaseSeeder extends Seeder
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345671",
             "namaMapel"=>"Bahasa Indonesia",
-            "Guru_ID" => "098765432101"
+            // "Guru_ID" => "098765432101"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345672",
             "namaMapel"=>"Fisika",
-            "Guru_ID" => "098765432102"
+            // "Guru_ID" => "098765432102"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345673",
             "namaMapel"=>"Matematika",
-            "Guru_ID" => "098765432103"
+            // "Guru_ID" => "098765432103"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345674",
             "namaMapel"=>"Bahasa Inggris",
-            "Guru_ID" => "098765432104"
+            // "Guru_ID" => "098765432104"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345675",
             "namaMapel"=>"Kimia",
-            "Guru_ID" => "098765432105"
+            // "Guru_ID" => "098765432105"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345676",
             "namaMapel"=>"Biologi",
-            "Guru_ID" => "098765432106"
+            // "Guru_ID" => "098765432106"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345677",
             "namaMapel"=>"Matematika Minat",
-            "Guru_ID" => "098765432107"
+            // "Guru_ID" => "098765432107"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345678",
             "namaMapel"=>"Pendidikan Agama",
-            "Guru_ID" => "098765432108"
+            // "Guru_ID" => "098765432108"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345679",
             "namaMapel"=>"Prakarya",
-            "Guru_ID" => "098765432109"
+            // "Guru_ID" => "098765432109"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345680",
             "namaMapel"=>"Seni Budaya",
-            "Guru_ID" => "098765432110"
+            // "Guru_ID" => "098765432110"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345681",
             "namaMapel"=>"Pendidikan Kewarganegaraan",
-            "Guru_ID" => "098765432111"
+            // "Guru_ID" => "098765432111"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345682",
             "namaMapel"=>"Penjaskes",
-            "Guru_ID" => "098765432112"
+            // "Guru_ID" => "098765432112"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345683",
             "namaMapel"=>"Matematika Wajib",
-            "Guru_ID" => "098765432113"
+            // "Guru_ID" => "098765432113"
         ]);
         \App\Models\Mapel::factory()->create([
             "idMapel"=>"02345684",
             "namaMapel"=>"Sejarah",
-            "Guru_ID" => "098765432114"
+            // "Guru_ID" => "098765432114"
         ]);
 
         //SISWA//

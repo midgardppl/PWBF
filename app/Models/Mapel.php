@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Mapel extends Model
-{
+{ 
     use HasFactory;
     protected $table = 'Mapel';
     protected $guarded = ['id'];
@@ -15,8 +15,14 @@ class Mapel extends Model
         'namaMapel'
     ];
 
-    public function guru(){
-        return $this->hasOne(Guru::class, 'id');
+    /**
+     * The roles that belong to the Mapel
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function guru()
+    {
+        return $this->belongsToMany(Guru::class, 'guru_mapel', 'mapel_id', 'guru_id');
     }
 
     /**

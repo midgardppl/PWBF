@@ -14,8 +14,10 @@ class GuruController extends Controller
      */
     public function index()
     {
-        return view('guru.index', [
-            "guru"=> Guru::all(),
+        $guru=Guru::with(['mapel'])->get();
+        return view('guru.index',
+        ['guru'=>$guru
+
         ]);
     }
 
