@@ -53,15 +53,13 @@ class MapelController extends Controller
         ]);
 
         $mapel = new Mapel;
-        $mapel->id=$request->id;
+        // $mapel->id=$request->id;
         $mapel->idMapel=$request->idMapel;
         $mapel->namaMapel=$request->namaMapel;
         $mapel->save();
-        $guru=Guru::find('id');
-        $guru->id=$request->id;
         $guru_mapel = new Guru_Mapel;
         $guru_mapel->create([
-            'guru_id'=>$guru->id,
+            'guru_id'=>$request->id,
             'mapel_id'=>$mapel->id
         ]);
         

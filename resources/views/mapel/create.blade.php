@@ -25,7 +25,7 @@
                 </div>
                 <div class="form-group">
                     <label>Nama Guru</label>
-                    <select name="guru_id[]" id="inputState">
+                    <select name=id id="inputState">
                         <option selected>Pilih Guru</option>
                         @foreach ($guru as $g)
                         <option value="{{ $g -> id }}">{{ $g -> nama }}</option>
