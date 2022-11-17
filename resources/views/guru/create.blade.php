@@ -10,9 +10,9 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center mb-5">Data Guru</h1>
-        <a href="{{ route('guru.index') }}" class="btn btn-primary mb-3">Data Guru</a>
+        <a href="{{ route('guru.create') }}" class="btn btn-primary mb-3">Data Guru</a>
         <div class="card-body">
-            <form action="/guru" method="POST">
+            <form action="{{route('guru.store')}}" method="POST">
                 @csrf
                 <div class="mb-3">
                     <label for="NIP" class="form-label">NIP</label>
@@ -49,7 +49,16 @@
                     <input type="text" class="form-control" name=email>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <label>Mata Pelajaran</label>
+                    <select name=id id="inputState">
+                        <option selected>Pilih Guru</option>
+                        @foreach ($mapel as $m)
+                        <option value="{{ $m -> id }}">{{ $m -> namaMapel }}</option>
+                        @endforeach
+                    </select>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
 
             </form>
 

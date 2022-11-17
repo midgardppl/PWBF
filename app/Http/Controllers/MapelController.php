@@ -33,10 +33,10 @@ class MapelController extends Controller
     public function create()
     {
         $mapel=Mapel::with(['guru','siswa'])->get();
-        $guru=DB::table('guru')->get();
+        $guru=Guru::all();
         return view('mapel.create', compact('guru'));
 
-         
+
     }
 
     /**
@@ -62,7 +62,7 @@ class MapelController extends Controller
             'guru_id'=>$request->id,
             'mapel_id'=>$mapel->id
         ]);
-        
+
 
         return redirect('mapel')->with('success', 'Data berhasil ditambah');
     }
@@ -86,7 +86,9 @@ class MapelController extends Controller
      */
     public function edit($id)
     {
-        //
+        $mapel = Mapel::findOrFail($id);
+
+        return view('mapel.edit')->with('mapel', $mapel);
     }
 
     /**
@@ -98,7 +100,23 @@ class MapelController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // validate
+        // read more on validation at http://laravel.com/docs/validation
+        $mapel = array(
+            'namaMapel'       => 'required',
+        );
+        $validator = Validator::make(Input::all(), $mapel);
+
+        // process the login
+        if ($validator->fails()) {
+            return Redirect::to('mapels/' . $id . '/edit')
+                ->withErrors($validator);
+        } else {
+            // store
+            $mapel = Mapel::find($id);
+            $mapel->namaMapel       = Input::get('namaMapel');
+            $mapel->save();
+
     }
 
     /**
@@ -107,8 +125,9 @@ class MapelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    function destroy($id)
     {
         //
     }
+}
 }

@@ -41,7 +41,7 @@
                             @endforeach
                             </td>
                             <td>
-                                <a href="" class="btn btn-success btn-sm">Edit</a>
+                                <a href="{{ route('mapel.edit') }}" class="btn btn-success btn-sm">Edit</a>
                                 <a href="" class="btn btn-success btn-sm">Hapus</a>
                             </td>
                         </tr>

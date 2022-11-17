@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Guru;
+use App\Models\Guru_Mapel;
+use App\Models\Mapel;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class GuruController extends Controller
 {
@@ -28,7 +32,9 @@ class GuruController extends Controller
      */
     public function create()
     {
-        return view('guru.create');
+        $guru=Guru::with(['Mapel'])->get();
+        $mapel=Mapel::all();
+        return view('guru.create', compact('mapel'));
     }
 
     /**
@@ -43,13 +49,13 @@ class GuruController extends Controller
         $request->validate([
             'NIP'=>'required',
             'nama'=>'required',
-            'passGuru'=>'required',
+            'passmapel'=>'required',
             'alamat'=>'required',
             'j_kel'=>'required',
             'no_telp'=>'required'
         ]);
 
-        // Guru::create($request->all());
+        // mapel::create($request->all());
         $guru = new Guru;
         $guru->NIP=$request->NIP;
         $guru->nama=$request->nama;
@@ -59,10 +65,16 @@ class GuruController extends Controller
         $guru->no_telp=$request->no_telp;
         $guru->email=$request->email;
         $guru->save();
+        $guru_mapel = new Guru_Mapel;
+        $guru_mapel->create([
+            'guru_id'=>$guru->id,
+            'mapel_id'=>$request->id
+        ]);
 
-        // echo "data berhasil masuk";
 
-        return redirect()->route('guru.index')->with('success', 'Data berhasil ditambah');
+        echo "data berhasil masuk";
+
+        return redirect('guru')->with('success', 'Data berhasil ditambah');
     }
 
     /**
