@@ -19,7 +19,7 @@ class MapelController extends Controller
     public function index()
     {
         $mapel=Mapel::with(['guru','siswa'])->get();
-        return view('mapel.index',
+        return view('mapel.index', compact('mapel'),
         ['mapel'=>$mapel
 
         ]);
@@ -86,9 +86,9 @@ class MapelController extends Controller
      */
     public function edit($id)
     {
-        $mapel = Mapel::findOrFail($id);
-
-        return view('mapel.edit')->with('mapel', $mapel);
+        $mapel = Mapel::find($id);
+        $guru=Guru::all();
+        return view('mapel.edit',compact('guru','mapel'));
     }
 
     /**
@@ -100,22 +100,38 @@ class MapelController extends Controller
      */
     public function update(Request $request, $id)
     {
+        
         // validate
         // read more on validation at http://laravel.com/docs/validation
-        $mapel = array(
-            'namaMapel'       => 'required',
-        );
-        $validator = Validator::make(Input::all(), $mapel);
+        // $mapel = array(
+        //     'namaMapel'       => 'required',
+        // );
+        // $validator = Mapel::make(Mapel::all(), $mapel);
+        $request->validate([
+            'namaMapel'=>'required'
+        ]);
 
+        $mapel=Mapel::find($id);
+        $mapel->namaMapel=$request->get('namaMapel');
+        $mapel->save();
+        $guru_mapel=new Guru_Mapel;
+        $guru_mapel->create([
+            'guru_id'=>$request->id,
+            'mapel_id'=>$mapel->id
+        ]);
+
+
+        return redirect('mapel');
         // process the login
+        /*
         if ($validator->fails()) {
-            return Redirect::to('mapels/' . $id . '/edit')
+            return redirect ('mapels/' . $id . '/edit')
                 ->withErrors($validator);
         } else {
             // store
             $mapel = Mapel::find($id);
-            $mapel->namaMapel       = Input::get('namaMapel');
-            $mapel->save();
+            $mapel->namaMapel       = Mapel::get('namaMapel');
+            $mapel->save();*/
 
     }
 
@@ -127,7 +143,10 @@ class MapelController extends Controller
      */
     function destroy($id)
     {
-        //
+        $mapel=Mapel::find($id);
+        $mapel->delete();
+
+        return redirect('mapel');
     }
 }
-}
+

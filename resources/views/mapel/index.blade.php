@@ -41,8 +41,12 @@
                             @endforeach
                             </td>
                             <td>
-                                <a href="{{ route('mapel.edit') }}" class="btn btn-success btn-sm">Edit</a>
-                                <a href="" class="btn btn-success btn-sm">Hapus</a>
+                                <a href="{{ route('mapel.edit',$m->id) }}" class="btn btn-success btn-sm">Edit</a>
+                                <form action="{{ route('mapel.destroy', $m -> id) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger" type="submit">Hapus</button>
+                                </form>
                             </td>
                         </tr>
 

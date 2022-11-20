@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Guru</title>
+    <title>Edit Mata Pelajaran</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-5">Data Guru</h1>
+        <h1 class="text-center mb-5">Edit Mata Pelajaran</h1>
         <a href="{{ route('mapel.index') }}" class="btn btn-primary mb-3">Data Mata Pelajaran</a>
         <div class="card-body">
-            <form action="{{ route('mapel.store') }}" method="POST">
+            <form action="{{ route('mapel.update',$mapel->id) }}" method="POST">
                 @csrf
+                @method('PUT')
+                    
+                
                 <div class="mb-3">
                     <label for="NIP" class="form-label">ID MATA PELAJARAN</label>
-                    <input type="text" class="form-control" name=idMapel>
+                    <input type="text" class="form-control" name=idMapel value="{{$mapel->idMapel}}">
 
                 </div>
                 <div class="mb-3">
                     <label for="nama" class="form-label">NAMA MATA PELAJARAN</label>
-                    <input type="text" class="form-control" name=namaMapel>
+                    <input type="text" class="form-control" name=namaMapel value="{{$mapel->namaMapel}}">
                 </div>
+               
                 <div class="form-group">
                     <label>Nama Guru</label>
                     <select name=id id="inputState">
                         <option selected>Pilih Guru</option>
                         @foreach ($guru as $g)
-                        <option value="{{ $g -> id }}">{{ $g -> nama }}</option>
+                        <option value="{{ $g -> id }}">{{$g -> nama}}</option>
                         @endforeach
                     </select>
                     <button type="submit" class="btn btn-primary">Submit</button>

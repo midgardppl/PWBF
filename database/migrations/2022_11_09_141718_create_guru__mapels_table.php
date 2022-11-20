@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('guru_mapel', function (Blueprint $table) {
             $table->unsignedBigInteger('guru_id');
-            $table->foreign('guru_id')->references('id')->on('guru')->onDelete('restrict');
+            $table->foreign('guru_id')->references('id')->on('guru')->onDelete('cascade');
             $table->unsignedBigInteger('mapel_id');
-            $table->foreign('mapel_id')->references('id')->on('mapel')->onDelete('restrict');
+            $table->foreign('mapel_id')->references('id')->on('mapel')->onDelete('cascade');
         });
     }
 
