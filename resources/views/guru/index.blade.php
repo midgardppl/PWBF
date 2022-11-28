@@ -30,7 +30,11 @@
                             <td>{{$g -> NIP}}</td>
                             <td>{{$g -> nama}}</td>
                             <td>{{$g -> alamat}}</td>
-                            <td>{{$g -> j_kel}}</td>
+                            @if ($g->j_kel==0)
+                            <td>Laki-laki</td>
+                            @elseif ($g->j_kel==1)
+                                <td>Perempuan</td>
+                            @endif
                             <td>{{$g -> no_telp}}</td>
                             <td>{{$g -> email}}</td>
                             <td>
@@ -40,8 +44,12 @@
                             @endforeach
                             </td>
                             <td>
-                                <a href="" class="btn btn-success btn-sm">Edit</a>
-                                <a href="" class="btn btn-success btn-sm">Hapus</a>
+                                <a href="{{route ('guru.edit',$g->id)}}" class="btn btn-success btn-sm">Edit</a>
+                                <form action="{{route ('guru.destroy', $g->id)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger" type="submit">Hapus</button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach

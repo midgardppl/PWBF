@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('nama');
             $table->string('passGuru')->unique();
             $table->string('alamat');
-            $table->string('j_kel');
+            $table->boolean('j_kel');
             $table->string('no_telp');
             $table->string('email')->nullable();
             $table->timestamps();

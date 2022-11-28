@@ -11,4 +11,16 @@ class Kelas extends Model
     protected $table='Kelas';
     protected $guarded=['id'];
     protected $fillable=['idKelas','namaKelas'];
+
+    
+    public function siswa()
+    {
+        return $this->belongsToMany(Siswa::class, 'kelas_siswa', 'kelas_id', 'siswa_id');
+    }
+
+    
+    public function guru()
+    {
+        return $this->belongsToMany(Guru::class, 'guru_kelas', 'kelas_id', 'guru_id');
+    }
 }

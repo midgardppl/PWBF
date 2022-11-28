@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Budi',
             'passGuru'=>'oichwsixnw',
             'alamat' => 'southlake',
-            'j_kel' => 'Laki-laki',
+            'j_kel' => '0',
             'no_telp' => '08213246638',
             'email' => 'budi@gmail.com'
         ]);
@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Nasa',
             'passGuru'=>'sndklwwiw',
             'alamat' => 'praha',
-            'j_kel' => 'perempuan',
+            'j_kel' => '1',
             'no_telp' => '08213246124',
             'email' => 'nasa@gmail.com'
         ]);
@@ -39,7 +39,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Welma',
             'passGuru'=>'kqwjdoqjwdoqi',
             'alamat' => 'Moscow',
-            'j_kel' => 'Perempuan',
+            'j_kel' => '1',
             'no_telp' => '082167273',
             'email' => 'welma@gmail.com'
         ]);
@@ -48,7 +48,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Hamzah',
             'passGuru'=>'kjhgfdyuwi',
             'alamat' => 'Bekasi',
-            'j_kel' => 'Laki-laki',
+            'j_kel' => '0',
             'no_telp' => '08213231638',
             'email' => 'hamzah@gmail.com'
         ]);
@@ -57,7 +57,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Kale',
             'passGuru'=>'njasqid',
             'alamat' => 'Glasgow',
-            'j_kel' => 'Laki-laki',
+            'j_kel' => '0',
             'no_telp' => '082121416638',
             'email' => ''
         ]);
@@ -66,7 +66,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Bautista',
             'passGuru'=>'khjgywaqi',
             'alamat' => 'San Francisco',
-            'j_kel' => 'Laki-laki',
+            'j_kel' => '0',
             'no_telp' => '08213246630',
             'email' => ''
         ]);
@@ -75,7 +75,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Indira',
             'passGuru'=>'oiuytrew',
             'alamat' => 'Surabaya',
-            'j_kel' => 'Perempuan',
+            'j_kel' => '1',
             'no_telp' => '0895606089424',
             'email' => 'bimpi@gmail.com'
         ]);
@@ -84,7 +84,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Santoso',
             'passGuru'=>'273t6937',
             'alamat' => 'Guangzhou',
-            'j_kel' => 'Laki-laki',
+            'j_kel' => '0',
             'no_telp' => '08276543275',
             'email' => 'sts@gmail.com'
         ]);
@@ -93,7 +93,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Selvi',
             'passGuru'=>'kajdsoqwj',
             'alamat' => 'London',
-            'j_kel' => 'Perempuan',
+            'j_kel' => '1',
             'no_telp' => '087654345678',
             'email' => 'selvi@gmail.com'
         ]);
@@ -102,7 +102,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Aisyah',
             'passGuru'=>'q2ye98y3',
             'alamat' => 'Madinah',
-            'j_kel' => 'Perempuan',
+            'j_kel' => '1',
             'no_telp' => '086545678921',
             'email' => 'ais@gmail.com'
         ]);
@@ -111,7 +111,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Vian',
             'passGuru'=>'zkjaodwij',
             'alamat' => 'Beijing',
-            'j_kel' => 'Laki-laki',
+            'j_kel' => '0',
             'no_telp' => '0821322538',
             'email' => 'vian@gmail.com'
         ]);
@@ -120,7 +120,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Bastian',
             'passGuru'=>'dnwlkwne',
             'alamat' => 'Amsterdam',
-            'j_kel' => 'Laki-laki',
+            'j_kel' => '0',
             'no_telp' => '08213209638',
             'email' => 'bst@gmail.com'
         ]);
@@ -129,7 +129,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Lupita',
             'passGuru'=>'qpwskoqs',
             'alamat' => 'Helsinki',
-            'j_kel' => 'Perempuan',
+            'j_kel' => '1',
             'no_telp' => '08218766638',
             'email' => 'lupi@gmail.com'
         ]);
@@ -138,7 +138,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Karim',
             'passGuru'=>'kswjxnqoww',
             'alamat' => 'Jerusalem',
-            'j_kel' => 'Laki-laki',
+            'j_kel' => '0',
             'no_telp' => '08213986638',
             'email' => 'karim@gmail.com'
         ]);
@@ -319,7 +319,34 @@ class DatabaseSeeder extends Seeder
             "statusSiswa"=>"1"
         ]);
 
-
+        \App\Models\Kelas::factory()->create([
+            "idKelas"=>"04321",
+            "namaKelas"=>"IPA 1"
+        ]);
+        \App\Models\Kelas::factory()->create([
+            "idKelas"=>"04322",
+            "namaKelas"=>"IPA 2"
+        ]);
+        \App\Models\Kelas::factory()->create([
+            "idKelas"=>"04323",
+            "namaKelas"=>"IPA 3"
+        ]);
+        \App\Models\Kelas::factory()->create([
+            "idKelas"=>"04324",
+            "namaKelas"=>"IPA 4"
+        ]);
+        \App\Models\Kelas::factory()->create([
+            "idKelas"=>"04325",
+            "namaKelas"=>"IPA 5"
+        ]);
+        \App\Models\Kelas::factory()->create([
+            "idKelas"=>"04326",
+            "namaKelas"=>"IPS 1"
+        ]);
+        \App\Models\Kelas::factory()->create([
+            "idKelas"=>"04327",
+            "namaKelas"=>"IPS 2"
+        ]);
 
 
 
@@ -327,7 +354,7 @@ class DatabaseSeeder extends Seeder
         //     'NIP' => '098765432115',
         //     'nama' => 'Jafar',
         //     'alamat' => 'Madura',
-        //     'j_kel' => 'Laki-laki',
+        //     'j_kel' => '0',
         //     'no_telp' => '08298246638',
         //     'email' => 'jafar@gmail.com'
         // ]);
@@ -335,7 +362,7 @@ class DatabaseSeeder extends Seeder
         //     'NIP' => '098765432116',
         //     'nama' => 'Hilda',
         //     'alamat' => 'Koln',
-        //     'j_kel' => 'Perempuan',
+        //     'j_kel' => '1',
         //     'no_telp' => '0887646638',
         //     'email' => 'hilda@gmail.com'
         // ]);
@@ -343,7 +370,7 @@ class DatabaseSeeder extends Seeder
         //     'NIP' => '098765432117',
         //     'nama' => '',
         //     'alamat' => 'southlake',
-        //     'j_kel' => 'Laki-laki',
+        //     'j_kel' => '0',
         //     'no_telp' => '08213246638',
         //     'email' => 'budi@gmail.com'
         // ]);
@@ -351,7 +378,7 @@ class DatabaseSeeder extends Seeder
         //     'NIP' => '098765432101',
         //     'nama' => 'Budi',
         //     'alamat' => 'southlake',
-        //     'j_kel' => 'Laki-laki',
+        //     'j_kel' => '0',
         //     'no_telp' => '08213246638',
         //     'email' => 'budi@gmail.com'
         // ]);
@@ -359,7 +386,7 @@ class DatabaseSeeder extends Seeder
         //     'NIP' => '098765432101',
         //     'nama' => 'Budi',
         //     'alamat' => 'southlake',
-        //     'j_kel' => 'Laki-laki',
+        //     'j_kel' => '0',
         //     'no_telp' => '08213246638',
         //     'email' => 'budi@gmail.com'
         // ]);
@@ -367,7 +394,7 @@ class DatabaseSeeder extends Seeder
         //     'NIP' => '098765432101',
         //     'nama' => 'Budi',
         //     'alamat' => 'southlake',
-        //     'j_kel' => 'Laki-laki',
+        //     'j_kel' => '0',
         //     'no_telp' => '08213246638',
         //     'email' => 'budi@gmail.com'
         // ]);
@@ -375,7 +402,7 @@ class DatabaseSeeder extends Seeder
         //     'NIP' => '098765432101',
         //     'nama' => 'Budi',
         //     'alamat' => 'southlake',
-        //     'j_kel' => 'Laki-laki',
+        //     'j_kel' => '0',
         //     'no_telp' => '08213246638',
         //     'email' => 'budi@gmail.com'
         // ]);

@@ -49,7 +49,7 @@ class GuruController extends Controller
         $request->validate([
             'NIP'=>'required',
             'nama'=>'required',
-            'passmapel'=>'required',
+            'passGuru'=>'required',
             'alamat'=>'required',
             'j_kel'=>'required',
             'no_telp'=>'required'
@@ -72,7 +72,7 @@ class GuruController extends Controller
         ]);
 
 
-        echo "data berhasil masuk";
+        // echo "data berhasil masuk";
 
         return redirect('guru')->with('success', 'Data berhasil ditambah');
     }
@@ -96,7 +96,9 @@ class GuruController extends Controller
      */
     public function edit($id)
     {
-        //
+        $guru = Guru::find($id);
+        $mapel=Mapel::all();
+        return view('guru.edit',compact('guru','mapel'));
     }
 
     /**
@@ -108,7 +110,27 @@ class GuruController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'nama'=>'required',
+            'alamat'=>'required',
+            'no_telp'=>'required',
+            'email'=>'required'
+        ]);
+
+        $guru=Guru::find($id);
+        $guru->nama=$request->get('nama');
+        $guru->alamat=$request->get('alamat');
+        $guru->no_telp=$request->get('no_telp');
+        $guru->email=$request->get('email');
+        $guru->save();
+        $guru_mapel = new Guru_Mapel;
+        $guru_mapel->create([
+            'guru_id'=>$guru->id,
+            'mapel_id'=>$request->id
+        ]);
+
+        // echo "data masuk";
+        return redirect('guru');
     }
 
     /**
@@ -119,6 +141,9 @@ class GuruController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $guru=guru::find($id);
+        $guru->delete();
+
+        return redirect('guru');
     }
 }

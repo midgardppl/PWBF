@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Kelas;
+use App\Models\Siswa;
+use App\Models\Kelas_Siswa;
 
 class KelasController extends Controller
 {
@@ -14,7 +16,11 @@ class KelasController extends Controller
      */
     public function index()
     {
-        //
+        $kelas=Kelas::with(['siswa'])->get();
+        $siswa=Siswa::all();
+        return view('kelas.index', [
+            'kelas'=>$kelas, 'siswa'=>$siswa
+        ]);
     }
 
     /**
@@ -24,7 +30,9 @@ class KelasController extends Controller
      */
     public function create()
     {
-        //
+        $kelas=Kelas::with(['siswa'])->get();
+        $siswa=Siswa::all();
+        return view('kelas.create',compact('siswa'));
     }
 
     /**
@@ -35,7 +43,21 @@ class KelasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'idKelas'=>'required',
+            'namaMapel'=> 'required'
+        ]);
+
+        $kelas = new Kelas;
+        $kelas->idKelas=$request->idKelas;
+        $kelas->namaKelas=$request->namaKelas;
+        $kelas->save();
+        $kelas_siswa=new Kelas_Siswa;
+        $kelas_siswa->create([
+            'kelas_id'=>$kelas->id,
+            'siswa_id'=>$request->id([])
+        ]);
+        return redirect('kelas');
     }
 
     /**
@@ -57,7 +79,9 @@ class KelasController extends Controller
      */
     public function edit($id)
     {
-        //
+        $kelas=Kelas::find($id);
+        $siswa=Siswa::all();
+        return view('kelas.edit', compact('kelas','siswa'));
     }
 
     /**
@@ -69,7 +93,24 @@ class KelasController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'idKelas'=>'required',
+            'namaKelas'=>'required'
+        ]);
+
+        $kelas=Kelas::find($id);
+        $kelas->idKelas=$request->get('idKelas');
+        $kelas->namaKelas=$request->get('namaKelas');
+        $kelas->save();
+        $kelas_siswa = new Kelas_Siswa;
+        $kelas_siswa->create([
+            'kelas_id'=>$kelas->id,
+            'siswa_id'=>$request->id
+        ]);
+
+        // echo "data masuk";
+        return redirect('kelas');
+    
     }
 
     /**
@@ -80,6 +121,10 @@ class KelasController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $kelas=Kelas::find($id);
+        $kelas->delete();
+
+        return redirect('kelas');
     }
 }
+

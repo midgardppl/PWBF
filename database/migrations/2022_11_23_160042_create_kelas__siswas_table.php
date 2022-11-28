@@ -13,12 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('guru_mapel', function (Blueprint $table) {
+        Schema::create('kelas_siswa', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('guru_id');
-            $table->foreign('guru_id')->references('id')->on('guru')->onDelete('cascade');
-            $table->unsignedBigInteger('mapel_id');
-            $table->foreign('mapel_id')->references('id')->on('mapel')->onDelete('cascade');
+            $table->unsignedBigInteger('kelas_id');
+            $table->foreign('kelas_id')->references('id')->on('kelas')->onDelete('cascade');
+            $table->unsignedBigInteger('siswa_id');
+            $table->foreign('siswa_id')->references('id')->on('siswa')->onDelete('cascade');
+        
         });
     }
 
@@ -29,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('guru_mapel');
+        Schema::dropIfExists('kelas_siswa');
     }
 };

@@ -12,13 +12,9 @@ class Siswa extends Model
 
     public function kelas()
      {
-
+        return $this->belongsToMany(Kelas::class, 'kelas_siswa', 'siswa_id', 'kelas_id');
     }
-        /**
-         * The roles that belong to the Siswa
-         *
-         * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-         */
+      
         public function mapel()
         {
             return $this->belongsToMany(Mapel::class, 'mapel_siswa', 'siswa_id', 'mapel_id');
