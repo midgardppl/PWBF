@@ -1,0 +1,195 @@
+<!-- <nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+				<div class="p-4">
+		  		<h1><a href="index.html" class="logo">GURU <span>Menu</span></a></h1>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="#"><span class="fa fa-th-list mr-3"></span> Mata Pelajaran</a>
+	          </li>
+	          <li>
+	              <a href="#"><span class="fa fa-user mr-3"></span> Kelas</a>
+	          </li>
+
+	        </ul> -->
+
+	        <!-- <div class="mb-5">
+						<h3 class="h6 mb-3">Subscribe for newsletter</h3>
+						<form action="#" class="subscribe-form">
+	            <div class="form-group d-flex">
+	            	<div class="icon"><span class="icon-paper-plane"></span></div>
+	              <input type="text" class="form-control" placeholder="Enter Email Address">
+	            </div>
+	          </form>
+					</div> -->
+
+	        <!-- <div class="footer"> -->
+	        	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a> -->
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	        <!-- </div> -->
+
+	      <!-- </div>
+    	</nav> -->
+
+        <!-- <img src="img/view.jpg" alt="image" class="img-fluid"> -->
+      <!-- <div class="container-fluid h-custom">
+      <div class="row-login d-flex justify-content-center align-items-center h-100"> -->
+        <!-- Page Content  -->
+        <!-- <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">MATA PELAJARAN</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      </div> -->
+
+		<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    KELAS
+    <div class="main-panel">
+        <div class="content-wrapper">
+        <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <!-- <h4 class="card-title">Striped Table</h4>
+                  <p class="card-description"> Add class <code>.table-striped</code>
+                  </p> -->
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> Profile </th>
+                          <th> Name </th>
+                          <th> NISN </th>
+                          <th> Input Nilai </th>
+                          <!-- <th> Deadline </th> -->
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="py-1">
+                            <img src="images/fotoe arekarek/foto 1.jpeg" alt="image" />
+                          </td>
+                          <td> Hussein Aprianto </td>
+                          <td>
+                            <span>132501</span>
+                          </td>
+                          <td> </td>
+                          <!-- <td> May 15, 2015 </td> -->
+                        </tr>
+                        <tr>
+                          <td class="py-1">
+                            <img src="images/fotoe arekarek/foto 2.jpg" alt="image" />
+                          </td>
+                          <td> Fharizal Renaldi </td>
+                          <td>
+                            <span>132502</span>
+                          </td>
+                          <td> </td>
+                          <!-- <td> July 1, 2015 </td> -->
+                        </tr>
+                        <tr>
+                          <td class="py-1">
+                            <img src="images/fotoe arekarek/foto 3.jpeg" alt="image" />
+                          </td>
+                          <td> Tsalas The King </td>
+                          <td>
+                            <span>132503</span>
+                          </td>
+                          <td> </td>
+                          <!-- <td> Apr 12, 2015 </td> -->
+                        </tr>
+                        <tr>
+                          <td class="py-1">
+                            <img src="images/fotoe arekarek/foto 4.jpg" alt="image" />
+                          </td>
+                          <td> Rizka Salisa </td>
+                          <td>
+                              <span>132504</span>
+                          </td>
+                          <td> </td>
+                          <!-- <td> May 15, 2015 </td> -->
+                        </tr>
+                        <tr>
+                          <td class="py-1">
+                            <img src="images/fotoe arekarek/foto 5.jpeg" alt="image" />
+                          </td>
+                          <td> Carissa Eka </td>
+                          <td>
+                            <span>132505</span>
+                          </td>
+                          <td> </td>
+                          <!-- <td> May 03, 2015 </td> -->
+                        </tr>
+                        <tr>
+                          <td class="py-1">
+                            <img src="images/fotoe arekarek/foto 6.jpeg" alt="image" />
+                          </td>
+                          <td> Erga Viranda </td>
+                          <td>
+                            <span>132506</span>
+                          </td>
+                          <td> </td>
+                          <!-- <td> April 05, 2015 </td> -->
+                        </tr>
+                        <tr>
+                          <td class="py-1">
+                            <img src="images/fotoe arekarek/foto 7.jpg" alt="image" />
+                          </td>
+                          <td> Meirza Putri </td>
+                          <td>
+                              <span>132507</span>
+                          </td>
+                          <td> </td>
+                          <!-- <td> June 16, 2015 </td> -->
+                        </tr>
+                        <tr>
+                          <td class="py-1">
+                            <img src="images/fotoe arekarek/foto 8.jpeg" alt="image" />
+                          </td>
+                          <td> Favian Hilmi </td>
+                          <td>
+                            <span>132508</span>
+                          </td>
+                          <td> </td>
+                          <!-- <td> June 16, 2015 </td> -->
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <!--<footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+          </div>
+        </footer>-->
+        <!-- partial -->
